@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\47807324\\Desktop\\TP_Final\\wwwroot\\img\\Configuracion.png",
+      "PackagePath": "staticwebassets\\img\\Configuracion.png"
+    },
+    {
+      "Id": "C:\\Users\\47807324\\Desktop\\TP_Final\\wwwroot\\img\\Persona.jpg",
+      "PackagePath": "staticwebassets\\img\\Persona.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47807324\\Desktop\\TP_Final\\wwwroot\\img\\peron.jpg",
+      "PackagePath": "staticwebassets\\img\\peron.jpg"
+    },
+    {
       "Id": "C:\\Users\\47807324\\Desktop\\TP_Final\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
