@@ -12,14 +12,16 @@ begin
 Select * from Perfiles where IdUsuario = @idPersona
 end;
 
-Create procedure MostrarForos as 
+Alter procedure MostrarForos @IdCategoria int
+as
 begin 
-Select top(10)* from Foros order by (select count(IdPosteo) from posteos where posteos.IdForo = Foros.IdForo)
+Select top(10)* from Foros where IdCategoria=@IdCategoria order by (select count(IdPosteo) from posteos where posteos.IdForo = Foros.IdForo)
 end
 
-Create procedure MostrarPosteos as 
+Alter procedure MostrarPosteos @IdForo int 
+as 
 begin 
-Select top(10)* from Posteos order by (select count(IdComentario) from ComentarioPosteos where ComentarioPosteos.IdPosteo = Posteos.IdPosteo)
+Select top(10)* from Posteos where IdForo=@IdForo order by (select count(IdComentario) from ComentarioPosteos where ComentarioPosteos.IdPosteo = Posteos.IdPosteo)
 end
 
 Create procedure MostrarComentariosPosteosASC
