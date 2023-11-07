@@ -20,3 +20,85 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.conteiner
+{
+  flex-wrap: wrap;
+}
+
+.card
+  {
+    width: 30%;
+    overflow: hidden;
+    float: left;
+    margin: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    text-align: center;
+    cursor: pointer;
+    
+  }
+
+  .card h3
+  {
+    text-align: center;
+  }
+
+  .card img
+  {
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+ 
+
+
+.containerPerfil
+{
+  width: 50%;
+  height: 70%;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  position: absolute;
+  margin-left: 17.5%;
+  margin-top: 1%;
+}
+
+.containerPerfil .imgFondoPerfil
+{
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+.containerPerfil .imgPerfil
+{
+  position: absolute;
+  width: 16%;
+  height: 18%;
+  border-radius: 60%;
+  display: flex;
+  margin-top: 15%;
+  margin-left: 1%;
+}
+
+.containerPerfil .pDescripcion
+{
+  position: relative;
+  word-wrap: break-word;
+  margin-top: 40%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+.containerPerfil p 
+{
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 22.9%;
+  margin-left: 17%;
+}
+
+
