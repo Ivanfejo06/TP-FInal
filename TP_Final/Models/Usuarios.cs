@@ -1,4 +1,4 @@
-public class Usuario
+public class Usuarios
 {
     public int IdUsuario {get;set;}
     public string Usuario {get;set;}
