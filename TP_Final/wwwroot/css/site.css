@@ -49,9 +49,6 @@ body {
     width: 70%;
     margin-left: 15%;
   }
-  
- 
-
 
 .containerPerfil
 {
@@ -101,4 +98,28 @@ body {
   margin-left: 17%;
 }
 
+
+.TituloCategoria
+{
+  text-align: center;
+  margin-top: 1%;
+  margin-right: 2.8%;
+}
+
+
+.ContainerCategoria
+{
+  flex-wrap: wrap;
+}
+
+.CardCategoria
+{
+  width: 30%;
+    overflow: hidden;
+    float: left;
+    margin: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    text-align: center;
+    cursor: pointer;
+}
 
