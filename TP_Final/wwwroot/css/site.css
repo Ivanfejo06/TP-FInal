@@ -57,7 +57,7 @@ body {
   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
   text-align: center;
   position: absolute;
-  margin-left: 17.5%;
+  margin-left: 9%;
   margin-top: 1%;
 }
 
@@ -123,3 +123,50 @@ body {
     cursor: pointer;
 }
 
+.containerConfig
+{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 70%;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 1%;
+
+}
+
+.containerConfig .imgPerfil
+{
+  position: absolute;
+  width: 16%;
+  height: 20%;
+  border-radius: 60%;
+  display: flex; 
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.containerConfig  .editar
+{
+  position: absolute;
+  width: 3%;
+  height: 4%;
+  display: flex;
+  margin-left: 22%;
+  margin-bottom: 100%;
+  cursor: pointer;
+
+}
+
+.containerConfig .containerInputs
+{
+  margin-top: 10%;
+}
+
+.containerConfig .botonCambio
+{
+  position: relative;
+  margin-top: 100%;
+}
