@@ -1,9 +1,5 @@
 public class BD
 {
-    //Traer Informacion
-
-    private static string ConnectionString{get;set;}  = @"Server=localhost;DataBase=Aid Together;Trusted_Connection=True;";
-
     private static string ConnectionString{get;set;}  = @"Server=localhost;DataBase=Aid Together;Trusted_Connection=True;";
     static public Usuarios MostrarUsuario(string IdUsuario){
         string sql = "exec MostrarUsuario @idPersona";
