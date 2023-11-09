@@ -61,11 +61,77 @@ public class BD
         }
     }
 
-    //NOT FINISHED
-    static public void InsertarPosteo(string titulo, string Subtitulo, string descripcion, string Cuerpo, string IdUsuario){
-        string sql = "exec InsertarPosteo @idCategoria, @titulo, @descripcion, @idUsuario";
+    static public void InsertarPosteo(string titulo, string Subtitulo, string Descripcion, string Cuerpo, string IdUsuario, int IdForo){
+        string sql = "exec InsertarPosteo @titulo, @subtitulo, @descripcion, @cuerpo, @idUsuario, @idForo";
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            db.Execute(sql, new {idCategoria = IdCategoria, titulo=Titulo, descripcion=Descripcion, idUsuario=IdUsuario});
+            db.Execute(sql, new {titulo=Titulo, subtitulo=Subtitulo, descripcion=Descripcion, cuerpo=Cuerpo, idUsuario=IdUsuario, idForo=IdForo});
+        }
+    }
+
+    static public void InsertarComentario(string Comentario, date Fecha, string IdUsuario, int IdPosteo){
+        string sql = "exec InsertarComentario @comentario, @fecha, @idUsuario, @idPosteo";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new {comentario=Comentario, fecha=Fecha, idUsuario=IdUsuario, idPosteo=IdPosteo});
+        }
+    }
+
+    static public void InsertarUsuario(string IdUsuario, string Contraseña, string Correo, string Nombre, string Apellido, string Foto){
+        string sql = "exec InsertarUsuario @idUsuario, @contraseña, @correo, @nombre, @apellido, @foto";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new {idUsuario=IdUsuario,contraseña=Contraseña,correo=Correo,nombre=Nombre,apellido=Apellido,foto=Foto});
+        }
+    }
+
+    //Updatear Informacion
+
+    static public void UpdatearUsuario(string IdUsuario, string Contraseña, string Correo, string Nombre, string Apellido, string Foto){
+        string sql = "exec UpdatearUsuario @idUsuario, @contraseña, @correo, @nombre, @apellido, @foto";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario, contraseña=Contraseña, correo=Correo, nombre=Nombre, apellido=Apellido, foto=Foto});
+        }
+    }
+
+    static public void UpdatearPerfil(string IdUsuario, string Descripcion, string ImagenFondo){
+        string sql = "exec UpdatearPerfil @idUsuario, @descripcion, @imagenFondo";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario, descripcion=Descripcion, imagenFondo=ImagenFondo});
+        }
+    }
+
+    static public void UpdatearComentario(string IdUsuario, string Cuerpo, int IdComentario){
+        string sql = "exec UpdatearComentario @idUsuario, @cuerpo, @idComentario";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario, cuerpo=Cuerpo,idComentario=IdComentario});
+        }
+    }
+
+    //Delete Informacion
+
+    static public void EliminarForo(string IdUsuario, int IdForo){
+        string sql = "exec EliminarForo @idUsuario, @idForo";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario, foro=Foro});
+        }
+    }
+
+    static public void EliminarPosteo(string IdUsuario, int IdPosteo){
+        string sql = "exec EliminarPosteo @idUsuario, @idPosteo";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario, idPosteo=IdPosteo});
+        }
+    }
+
+    static public void EliminarComentario(string IdUsuario, int IdComentario){
+        string sql = "exec EliminarComentario @idUsuario, @cuerpo, @idComentario";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario, cuerpo=Cuerpo,idComentario=IdComentario});
+        }
+    }
+
+    static public void EliminarUsuario(string IdUsuario){
+        string sql = "exec EliminarUsuario @idUsuario";
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            db.Execute(sql, new{idUsuario=IdUsuario});
         }
     }
 }

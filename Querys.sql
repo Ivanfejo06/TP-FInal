@@ -79,10 +79,10 @@ begin
 update Perfiles set Descripcion=@Descripcion, ImagenFondo=@ImagenFondo where IdUsuario=@IdUsuario
 end;
 
-Create procedure UpdatearComentario @IdUsuario varchar(50),@cuerpo varchar(1000)
+Alter procedure UpdatearComentario @IdUsuario varchar(50),@cuerpo varchar(1000), @IdComentario int
 as
 begin
-update ComentarioPosteos set Cuerpo=@Cuerpo where IdUsuario=@IdUsuario
+update ComentarioPosteos set Cuerpo=@Cuerpo where IdUsuario=@IdUsuario and IdComentario=@IdComentario
 end;
 
 /*Eliminar informacion*/
