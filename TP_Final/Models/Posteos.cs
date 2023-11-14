@@ -1,4 +1,4 @@
-public class Posteo
+public class Posteos
 {
     public int IdPosteo {get;set;}
     public string Titulo {get;set;}
@@ -7,4 +7,13 @@ public class Posteo
     public string Cuerpo {get;set;}
     public int IdUsuario {get;set;}
     public int IdForo {get;set;}
+
+public Posteos ()
+{
+
 }
+
+
+
+}
+
