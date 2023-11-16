@@ -1,6 +1,9 @@
+using Dapper;
+using System.Data.SqlClient;
+
 public class BD
 {
-    private static string ConnectionString{get;set;}  = @"Server=localhost;DataBase=Aid Together;Trusted_Connection=True;";
+    private static string _connectionString{get;set;} = @"Server=localhost;DataBase=Aid Together;Trusted_Connection=True;";
     static public Usuario MostrarUsuario(string IdUsuario){
         string sql = "exec MostrarUsuario @idPersona";
         Usuario usuario;
@@ -27,10 +30,10 @@ public class BD
         return Usuario;
     }
 
-    static public list<Foros> MostrarForosPrincipal(int cantidad)
+    static public List<Foros> MostrarForosPrincipal(int cantidad)
     {
         string sql = "Exec MostrarForosPrincipal @Cantidad";
-        list<Foros> foros;
+        List<Foros> foros;
         using(SqlConnection db = new SqlConnection(_connectionString)){
            foros = db.Query<Foros>(sql, new {Cantidad = cantidad}).ToList();
         } 
@@ -38,34 +41,34 @@ public class BD
     }
 
 
-    static public list<Foros> MostrarForos(int IdCategoria, int cantidad){
+    static public List<Foros> MostrarForos(int IdCategoria, int cantidad){
         string sql = "exec MostrarForos @idCategoria @Cantidad";
-        list<Foros> foros ;
+        List<Foros> foros ;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             foros = db.Query<Foros>(sql, new{idCategoria = IdCategoria, Cantidad=cantidad}).ToList();
         }
         return foros;
     }
     
-    static public list<Posteos> MostrarPosteos(int IdForo, int cantidad){
+    static public List<Posteos> MostrarPosteos(int IdForo, int cantidad){
         string sql = "exec MostrarPosteos @idForo @Cantidad";
-        list<Posteos> posteos;
+        List<Posteos> posteos;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             posteos = db.Query<Posteos>(sql, new{idForo = IdForo, Cantidad = cantidad}).ToList();
         }
         return posteos;
     }
-    static public list<ComentarioPosteos> MostrarComentariosASC(int IdPosteo, int cantidad){
+    static public List<ComentarioPosteos> MostrarComentariosASC(int IdPosteo, int cantidad){
         string sql = "exec MostrarComentariosASC @idPosteo @Cantidad";
-        list<ComentarioPosteo> comentarios;
+        List<ComentarioPosteos> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             comentarios = db.Query<ComentarioPosteos>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
         }
         return comentarios;
     }
-    static public list<ComentarioPosteos> MostrarComentariosDESC(int IdPosteo, int cantidad){
+    static public List<ComentarioPosteos> MostrarComentariosDESC(int IdPosteo, int cantidad){
         string sql = "exec MostrarComentariosDESC @idPosteo @Cantidad";
-        list<ComentarioPosteos> comentarios;
+        List<ComentarioPosteos> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             comentarios = db.Query<ComentarioPosteos>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
         }
@@ -81,14 +84,14 @@ public class BD
         }
     }
 
-    static public void InsertarPosteo(string titulo, string Subtitulo, string Descripcion, string Cuerpo, string IdUsuario, int IdForo){
+    static public void InsertarPosteo(string Titulo, string Subtitulo, string Descripcion, string Cuerpo, string IdUsuario, int IdForo){
         string sql = "exec InsertarPosteo @titulo, @subtitulo, @descripcion, @cuerpo, @idUsuario, @idForo";
         using(SqlConnection db = new SqlConnection(_connectionString)){
             db.Execute(sql, new {titulo=Titulo, subtitulo=Subtitulo, descripcion=Descripcion, cuerpo=Cuerpo, idUsuario=IdUsuario, idForo=IdForo});
         }
     }
 
-    static public void InsertarComentario(string Comentario, date Fecha, string IdUsuario, int IdPosteo){
+    static public void InsertarComentario(string Comentario, DateTime Fecha, string IdUsuario, int IdPosteo){
         string sql = "exec InsertarComentario @comentario, @fecha, @idUsuario, @idPosteo";
         using(SqlConnection db = new SqlConnection(_connectionString)){
             db.Execute(sql, new {comentario=Comentario, fecha=Fecha, idUsuario=IdUsuario, idPosteo=IdPosteo});
@@ -123,7 +126,7 @@ public class BD
     static public void EliminarForo(string IdUsuario, int IdForo){
         string sql = "exec EliminarForo @idUsuario, @idForo";
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            db.Execute(sql, new{idUsuario=IdUsuario, foro=Foro});
+            db.Execute(sql, new{idUsuario=IdUsuario, idForo=IdForo});
         }
     }
 
@@ -135,9 +138,9 @@ public class BD
     }
 
     static public void EliminarComentario(string IdUsuario, int IdComentario){
-        string sql = "exec EliminarComentario @idUsuario, @cuerpo, @idComentario";
+        string sql = "exec EliminarComentario @idUsuario, @idComentario";
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            db.Execute(sql, new{idUsuario=IdUsuario, cuerpo=Cuerpo,idComentario=IdComentario});
+            db.Execute(sql, new{idUsuario=IdUsuario, idComentario=IdComentario});
         }
     }
 

@@ -15,23 +15,23 @@ public class HomeController : Controller
 
 
 //Mostrar informacion
-    public IActionResult Index()
+    public IActionResult Index(int cantidad)
     {
     
-        ViewBag.ListarForos = BD.MostrarForosPrincipal();
+        ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
 
         return View();
     }
 
-    public IActionResult Posteos(int idForo)
+    public IActionResult Posteos(int idForo, int cantidad)
     {
-        ViewBag.ListPosteos = BD.MostrarPosteos(idForo);
+        ViewBag.ListPosteos = BD.MostrarPosteos(idForo, cantidad);
         return View ("Posteos");
     }
 
-    public IActionResult Categorias (int idForo)
+    public IActionResult Categorias (int idForo, int cantidad)
     {
-        ViewBag.ListForosXcategoria = BD.MostrarForos(idForo);
+        ViewBag.ListForosXcategoria = BD.MostrarForos(idForo, cantidad);
         return View("Categoria");
     }
 
@@ -43,7 +43,7 @@ public class HomeController : Controller
     public IActionResult MostrarPerfil(string IdUsuario)
     {
         ViewBag.InfoPerfil = BD.MostrarPerfil(IdUsuario);
-        return ("Perfil");
+        return View("Perfil");
     }
 
     public IActionResult MostrarConfiguracion (string IdUsuario)
@@ -54,21 +54,21 @@ public class HomeController : Controller
 
     //inserts
 
-  public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto,string Descripcion,string ImagenFondo)
+  public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
-        BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto,Descripcion,ImagenFondo);
+        BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
         return RedirectToAction ("InicioSesion");
     }
 
-    public IActionResult InsertComentario (string Comentario,date fecha,string IdUsuario,int IdPosteo)
+    public IActionResult InsertComentario (string Comentario,DateTime fecha,string IdUsuario,int IdPosteo)
     {
             BD.InsertarComentario(Comentario,fecha,IdUsuario,IdPosteo);
             return RedirectToAction("Posteos");
     }
 
-    public IActionResult InsertPosteo(string Titulo,string Subtitulo,string Descripcion,string Cuerpo,int IdForo)
+    public IActionResult InsertPosteo(string Titulo,string Subtitulo,string Descripcion,string Cuerpo, string IdUsuario, int IdForo)
     {
-        BD.InsertarPosteo(Titulo,Subtitulo,Descripcion,Cuerpo,IdForo);
+        BD.InsertarPosteo(Titulo,Subtitulo,Descripcion,Cuerpo,IdUsuario,IdForo);
        return RedirectToAction ("Posteos");
     }
 
@@ -100,7 +100,7 @@ public class HomeController : Controller
             return RedirectToAction ("Foros");
         }
 
-        public IActionResult EliminarComentario (string IdUsuario,int idComentario)
+        public IActionResult EliminarComentario (string IdUsuario,int IdComentario)
         {
             BD.EliminarComentario(IdUsuario,IdComentario);
             return RedirectToAction ("Posteos");
