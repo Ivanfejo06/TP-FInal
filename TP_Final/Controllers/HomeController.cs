@@ -23,15 +23,17 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Posteos(int idForo, int cantidad)
+    public IActionResult Posteos(int idForo)
     {
-        ViewBag.ListPosteos = BD.MostrarPosteos(idForo, cantidad);
+        int Cantidad = 9;
+        ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
         return View ("Posteos");
     }
 
-    public IActionResult Categorias (int idForo, int cantidad)
+    public IActionResult Categorias (int idCategoria)
     {
-        ViewBag.ListForosXcategoria = BD.MostrarForos(idForo, cantidad);
+        int Cantidad = 10;
+        ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
         return View("Categoria");
     }
 

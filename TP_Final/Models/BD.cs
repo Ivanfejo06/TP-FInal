@@ -42,7 +42,7 @@ public class BD
 
 
     static public List<Foros> MostrarForos(int IdCategoria, int cantidad){
-        string sql = "exec MostrarForos @idCategoria @Cantidad";
+        string sql = "exec MostrarForos @idCategoria, @Cantidad";
         List<Foros> foros ;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             foros = db.Query<Foros>(sql, new{idCategoria = IdCategoria, Cantidad=cantidad}).ToList();
@@ -51,7 +51,7 @@ public class BD
     }
     
     static public List<Posteos> MostrarPosteos(int IdForo, int cantidad){
-        string sql = "exec MostrarPosteos @idForo @Cantidad";
+        string sql = "exec MostrarPosteos @idForo, @Cantidad";
         List<Posteos> posteos;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             posteos = db.Query<Posteos>(sql, new{idForo = IdForo, Cantidad = cantidad}).ToList();
@@ -59,7 +59,7 @@ public class BD
         return posteos;
     }
     static public List<ComentarioPosteos> MostrarComentariosASC(int IdPosteo, int cantidad){
-        string sql = "exec MostrarComentariosASC @idPosteo @Cantidad";
+        string sql = "exec MostrarComentariosASC @idPosteo, @Cantidad";
         List<ComentarioPosteos> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             comentarios = db.Query<ComentarioPosteos>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
@@ -67,7 +67,7 @@ public class BD
         return comentarios;
     }
     static public List<ComentarioPosteos> MostrarComentariosDESC(int IdPosteo, int cantidad){
-        string sql = "exec MostrarComentariosDESC @idPosteo @Cantidad";
+        string sql = "exec MostrarComentariosDESC @idPosteo, @Cantidad";
         List<ComentarioPosteos> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             comentarios = db.Query<ComentarioPosteos>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();

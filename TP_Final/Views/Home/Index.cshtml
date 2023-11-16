@@ -5,18 +5,22 @@
 
 
 
+@foreach(Foros f in ViewBag.ListarForos )
+{
+<a href= '@Url.Action("Posteos", new {idForo = f.IdForo})'>
 <div class= "conteiner">
-
-
-
 <div class = "card"> 
-<h3>hola </h3>
-<img src= "/img/peron.jpg">
-<p> papu</p>
-
+<h3>@f.Titulo </h3>
+<img src= "">
+<p>@f.Descripcion</p>
 </div>
-
 </div>
+</a>
+}
+
+
+
+
 
 
 

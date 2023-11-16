@@ -24,7 +24,7 @@ end
 
 Alter Procedure MostrarForosPrincipal @Cantidad int as
 begin
-declare @masDiez int = @cantidad + 10
+declare @masDiez int = @Cantidad + 10
 Select * from Foros  order by (Select Count(IdPosteo) from Posteos)
 OFFSET @Cantidad rows fetch next @masDiez rows only
 end
@@ -32,7 +32,7 @@ end
 Alter procedure MostrarForos @IdCategoria int, @Cantidad int
 as
 begin
-declare @masDiez int = @cantidad + 10
+declare @masDiez int = @Cantidad + 10
 Select * from Foros where IdCategoria=@IdCategoria order by (select count(IdPosteo) from posteos where posteos.IdForo = Foros.IdForo)
 OFFSET @cantidad rows fetch next @masDiez rows only
 end
@@ -40,9 +40,9 @@ end
 Alter procedure MostrarPosteos @IdForo int, @Cantidad int
 as 
 begin
-declare @masDiez int = @cantidad + 10
+declare @masDiez int = @Cantidad + 10
 Select * from Posteos where IdForo=@IdForo order by (select count(IdComentario) from ComentarioPosteos where ComentarioPosteos.IdPosteo = Posteos.IdPosteo)
-OFFSET @cantidad rows fetch next @masDiez rows only
+OFFSET @Cantidad rows fetch next @masDiez rows only
 end
 
 Alter procedure MostrarComentariosPosteosASC
@@ -50,7 +50,7 @@ Alter procedure MostrarComentariosPosteosASC
 @Cantidad int
 as
 begin
-declare @masDiez int = @cantidad + 10
+declare @masDiez int = @Cantidad + 10
 Select * from ComentarioPosteos where IdPosteo = @idPosteo order by Fecha asc
 offset @Cantidad rows fetch next @masDiez rows only
 end;
@@ -60,7 +60,7 @@ Alter procedure MostrarComentariosPosteosDESC
 @Cantidad int
 as
 begin
-declare @masDiez int = @cantidad + 10
+declare @masDiez int = @Cantidad + 10
 Select * from ComentarioPosteos where IdPosteo = @idPosteo order by Fecha desc
 offset @Cantidad rows fetch next @masDiez rows only
 end;
