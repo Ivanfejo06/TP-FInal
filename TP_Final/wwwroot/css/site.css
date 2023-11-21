@@ -170,3 +170,16 @@ body {
   position: relative;
   margin-top: 100%;
 }
+
+.boton
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.Separador
+{
+  margin-top: 100%;
+}

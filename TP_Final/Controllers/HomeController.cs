@@ -18,9 +18,10 @@ public class HomeController : Controller
     public IActionResult Index(int cantidad)
     {
     
-        ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
+     ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
 
-        return View();
+        return View("Registro");
+       
     }
 
     public IActionResult Posteos(int idForo)
@@ -34,12 +35,17 @@ public class HomeController : Controller
     {
         int Cantidad = 10;
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
-        return View("Categoria");
+        return View("Categoria"); 
     }
 
     public IActionResult InicioSesion ()
     {
         return View("InicioSesion");
+    }
+
+    public IActionResult Registrarse()
+    {
+        return View("Registro");
     }
 
     public IActionResult MostrarPerfil(string IdUsuario)
@@ -53,6 +59,8 @@ public class HomeController : Controller
         ViewBag.Usuario = BD.MostrarPerfil(IdUsuario);
         return View("Configuracion");
     }
+
+   
 
     //inserts
 

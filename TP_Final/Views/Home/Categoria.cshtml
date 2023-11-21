@@ -1,3 +1,16 @@
-<p class = "TituloCategoria"> Hola</p>
+<p class = "TituloCategoria"> @ViewBag.ListForosXcategoria.Nombre</p>
 
-<div class= "CardCategoria"> Hola</div>
+<p> hola    </p>
+@foreach(Foros c in ViewBag.ListForosXcategoria)
+{
+    <a href= '@Url.Action("Categorias", new {idCategoria = c.IdCategoria})'> 
+<div class= "CardCategoria"> 
+
+<h3>@c.Titulo </h3>
+<img src= ""> 
+<p>@c.Descripcion </p>
+
+</div>
+</a>
+}
+

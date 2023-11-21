@@ -4,6 +4,20 @@ using System.Data.SqlClient;
 public class BD
 {
     private static string _connectionString{get;set;} = @"Server=localhost;DataBase=Aid Together;Trusted_Connection=True;";
+
+    static public Usuario IniciarSesion (string idUsuario,string contraseña)
+    {
+        string sql = "exec IniciarSesion @IdUsuario, @Contraseña";
+        Usuario user;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            user = db.QueryFirstOrDefault<Usuario>(sql,new{IdUsuario = idUsuario, Contraseña = contraseña});
+        }
+        return user;
+    }
+
+
+
     static public Usuario MostrarUsuario(string IdUsuario){
         string sql = "exec MostrarUsuario @idPersona";
         Usuario usuario;
@@ -74,6 +88,7 @@ public class BD
         }
         return comentarios;
     }
+
 
     //Insertar Informacion
     
