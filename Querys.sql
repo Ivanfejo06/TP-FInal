@@ -1,6 +1,6 @@
 /*Traer informacion*/
 
-Alter Procedure IniciarSesion @IdUsuario varchar(50), @Contraseña varchar(50)
+Create Procedure IniciarSesion @IdUsuario varchar(50), @Contraseña varchar(50)
 as
 begin
 select * from Usuario where IdUsuario = @Idusuario and Contraseña = @Contraseña
