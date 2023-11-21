@@ -1,5 +1,11 @@
 /*Traer informacion*/
 
+Alter Procedure IniciarSesion @IdUsuario varchar(50), @Contraseña varchar(50)
+as
+begin
+select * from Usuario where IdUsuario = @Idusuario and Contraseña = @Contraseña
+end;
+
 Alter Procedure MostrarUsuario @idPersona varchar(50)
 as
 begin 
@@ -85,11 +91,11 @@ begin
 INSERT INTO ComentarioPosteos VALUES (@Cuerpo, @fecha, @IdUsuario, @idposteo)
 end;
 
-Alter procedure InsertarUsuario @IdUsuario varchar(50), @Contrase�a varchar(50), @Correo varchar(50), @Nombre varchar(50), @Apellido varchar(50), @Foto varchar(400)
+Alter procedure InsertarUsuario @IdUsuario varchar(50), @Contraseña varchar(50), @Correo varchar(50), @Nombre varchar(50), @Apellido varchar(50), @Foto varchar(400)
 as
 begin
-INSERT INTO Usuario VALUES (@IdUsuario,@Contrase�a,@Correo,@Nombre,@Apellido,@Foto)
-INSERT INTO Perfiles VALUES ('','',SCOPE_IDENTITY())
+INSERT INTO Usuario VALUES (@IdUsuario,@Contraseña,@Correo,@Nombre,@Apellido,@Foto)
+INSERT INTO Perfiles VALUES (NULL,NULL,@IdUsuario)
 end;
 
 /*Updatear informacion*/
