@@ -1,33 +1,30 @@
 <div class="containerConfig">   
-<form Action= '@Url.Action("CargarUsuario")' method= "get">
+<form Action= '@Url.Action("UpdatearUsuario")' method= "get">
     <div>
         <h4>Registrarse </h4>
         <div class = "containerInputs">
             <label for="UserName">IdUsuario</label>
-            <input name="IdUsuario" type="text" placeholder = "Nombre de Usuario" id="user" onkeyup="ValidateUser()" required>
+            <input name="IdUsuario" type="text"  id="user" onkeyup="ValidateUser()" required> @ViewBag.Usuario.IdUsuario
             <span id="UserAlert" class="alert"></span>
         </div>
         <div class = "containerInputs">
             <label for="UserName">Contraseña</label>
-            <input type="password" value="" name="Contraseña" placeholder="Contraseña" id="c1" onkeyup="ValidatePassword()" required>
+            <input type="password" value="" name="Contraseña"  id="c1" onkeyup="ValidatePassword()" required> @ViewBag.Usuario.Contraseña
             <span id="PasswordAlert" class="alert"></span>
         </div>
         <div class = "containerInputs">
-            <label for="UserName">Repetir contraseña</label>
-            <input type="password" value="" placeholder="Repetir Contraseña" id="c2" onkeyup="ValidateRepeat()" required>
-            <span id="RepeatAlert" class="alert"></span>
-        </div>
-        <div class = "containerInputs">
             <label for="UserName">Correo</label>
-            <input type="email" value="" name="Correo" placeholder="Correo@correo.correo" id="mail" onkeyup="ValidateEmail()" required>
+            <input type="email" value="" name="Correo"  id="mail" onkeyup="ValidateEmail()" required> @ViewBag.Usuario.Correo
             <span id="MailAlert" class="alert"></span>
         </div>
         <div class = "containerInputs">
-            <input name="Nombre" type="text" placeholder= "Nombre" id="name" onkeyup="ValidateName()" required>
+         <label for="UserName">Nombre</label>
+            <input name="Nombre" type="text"  id="name" onkeyup="ValidateName()" required>@ViewBag.Usuario.Nombre
             <span id="NameAlert" class="alert"></span>
         </div>
         <div class = "containerInputs">
-            <input name="Apellido" type="text" placeholder= "Apellido" id="a" onkeyup="ValidateApellido()" required>
+         <label for="UserName">Apellido</label>
+            <input name="Apellido" type="text"  id="a" onkeyup="ValidateApellido()" required> @ViewBag.Apellido
             <span id="ApellidoAlert" class="alert"></span>
         </div>
         <div class = "containerInputs">
@@ -38,3 +35,5 @@
         </div>
     <div>
 </form>
+
+

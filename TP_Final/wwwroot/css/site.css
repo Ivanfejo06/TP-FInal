@@ -179,8 +179,35 @@ body {
   border-radius: 15px;
 }
 
+.Posteo
+{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 70%;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 1%;
+}
+
 .Separador
 {
-  
+  margin-top: 100%;
+}
+
+.Posteo .TopBar
+{
+  background-color:#d1efec;
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+
+.Posteo .Descripcion
+{
+  position: relative;
+  bottom: 0%;
 }
 
