@@ -1,0 +1,12 @@
+
+
+@foreach(Posteos p in  ViewBag.ListPosteos)
+{
+    <div class = "Posteo">
+    <div class= "TopBar"> @p.Titulo
+    <p>@p.IdUsuario </p>
+    </div>
+    <div class= "Descripcion"><p>@p.Descripcion </p> </div>
+    </div>
+    
+}

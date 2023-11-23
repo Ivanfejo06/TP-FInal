@@ -20,12 +20,7 @@ end;
 
 Alter Procedure UsuarioExists @nombre varchar(50) as
 begin
-declare @bool int = 1
-if((select idusuario from usuario where idusuario = @nombre) IS NULL)
-begin
-set @bool = 0
-end
-return @bool
+select idusuario from usuario where idusuario = @nombre
 end
 
 Alter Procedure MostrarForosPrincipal @Cantidad int as

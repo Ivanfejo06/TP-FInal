@@ -24,11 +24,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maWd1cmFjaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/47436792/Desktop/TP-FInal/TP_Final/Views/Home/Foro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/47436792/Desktop/TP-FInal/TP_Final/Views/Home/Index.cshtml]
+=======
+[C:/Users/47807324/Desktop/TP_Final/Views/Home/Index.cshtml]
+>>>>>>> ddd4cc22cb4146f74f76c716daf459f73b9f99c6
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -52,7 +56,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/47436792/Desktop/TP-FInal/TP_Final/Views/Shared/Error.cshtml]
+=======
+[C:/Users/47807324/Desktop/TP_Final/Views/Home/UpdatearDatos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVhckRhdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47807324/Desktop/TP_Final/Views/Shared/Error.cshtml]
+>>>>>>> ddd4cc22cb4146f74f76c716daf459f73b9f99c6
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

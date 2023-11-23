@@ -20,7 +20,7 @@ public class HomeController : Controller
     
      ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
 
-        return View("Registro");
+        return View("UpdatearDatos");
        
     }
 
@@ -59,6 +59,12 @@ public class HomeController : Controller
     {
         ViewBag.Usuario = BD.MostrarPerfil(IdUsuario);
         return View("Configuracion");
+    }
+
+    public IActionResult UpdateDataUsuario(Usuario Us)
+    {
+        ViewBag.Usuario = Us;
+        return View("UpdatearDatos");
     }
 
    
