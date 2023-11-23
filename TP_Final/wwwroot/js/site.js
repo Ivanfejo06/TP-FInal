@@ -138,4 +138,22 @@ function ValidateUser()
         UserAlert.textContent = "El nombre debe tener menos de 50 caracteres.";
     }
     if(leng && long){UserAlert.textContent = "";}
+
+    var username = $('#user').val();
+
+    $.ajax({
+        type: 'POST',
+        url: 'Home/UsuarioExists', // Reemplaza esto con la URL de tu acción de validación en el servidor
+        data: { IdUsuario: username},
+        success: function(response) {
+            if (response == NULL) {
+                $('#UserAlert').text('Nombre de usuario disponible').removeClass('alert-error').addClass('alert-success');
+            } else {
+                $('#UserAlert').text('Nombre de usuario no disponible').removeClass('alert-success').addClass('alert-error');
+            }
+        },
+        error: function(response){
+            $('#UserAlert').text('no anda').removeClass('alert-error').addClass('alert-success');
+        }
+    });
 }

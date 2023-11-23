@@ -30,6 +30,7 @@ public class HomeController : Controller
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
         return View ("Posteos");
     }
+    
 
     public IActionResult Categorias (int idCategoria)
     {
@@ -118,11 +119,15 @@ public class HomeController : Controller
 
         public IActionResult EliminarUsuario (string IdUsuario)
         {
-            BD. EliminarUsuario(IdUsuario);
+            BD.EliminarUsuario(IdUsuario);
             return RedirectToAction ("Index");
         }
 
 
+    public string UsuarioExists(string IdUsuario)
+    {
+        return BD.UsuarioExists(IdUsuario);
+    }
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47807324\\Desktop\\TP_Final\\TP_Final.csproj": {}
+    "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47807324\\Desktop\\TP_Final\\TP_Final.csproj": {
+    "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47807324\\Desktop\\TP_Final\\TP_Final.csproj",
+        "projectUniqueName": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
         "projectName": "TP_Final",
-        "projectPath": "C:\\Users\\47807324\\Desktop\\TP_Final\\TP_Final.csproj",
-        "packagesPath": "C:\\Users\\47807324\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47807324\\Desktop\\TP_Final\\obj\\",
+        "projectPath": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
+        "packagesPath": "C:\\Users\\47436792\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47807324\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47436792\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.21, )"
+              "version": "[2.1.24, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

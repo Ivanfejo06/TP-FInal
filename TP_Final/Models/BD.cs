@@ -15,9 +15,6 @@ public class BD
         }
         return user;
     }
-
-
-
     static public Usuario MostrarUsuario(string IdUsuario){
         string sql = "exec MostrarUsuario @idPersona";
         Usuario usuario;
@@ -35,11 +32,11 @@ public class BD
         return perfil;
     }
 
-    static public Usuario UsuarioExists(string Nombre){
+    static public string UsuarioExists(string Nombre){
         string sql = "exec UsuarioExists @nombre";
-        Usuario Usuario;
+        string Usuario;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            Usuario = db.QueryFirstOrDefault<Usuario>(sql, new{nombre = Nombre});
+            Usuario = db.QueryFirstOrDefault<string>(sql, new{nombre = Nombre});
         }
         return Usuario;
     }
