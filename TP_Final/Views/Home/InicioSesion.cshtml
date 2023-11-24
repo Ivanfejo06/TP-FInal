@@ -1,19 +1,15 @@
 <div class="containerConfig"> 
-<form Action= '@Url.Action("IniciarSesion")' method= "get">
-
-
+<form action= '@Url.Action("IniciarSesion")' method= "get">
 <div class = "Separador">
 <div class = "containerInputs">
-
-<input type="text"  placeholder = "Nombre">
+<input type="text"  placeholder = "Nombre" name="IdUsuario" >
 </div>
 <div class = "containerInputs">
-
-<input type="text" placeholder= "Contraseña">
+<input type="text" placeholder= "Contraseña" name="Contraseña" >
 </div>
 
 <div class = "containerInputs">
-<button class="boton">Iniciar Sesion </button>
+<button  type= "submit "class="boton">Iniciar Sesion </button>
 </div>
 </form>
 <div class = "containerInputs">

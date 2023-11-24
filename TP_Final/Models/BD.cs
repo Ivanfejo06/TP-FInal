@@ -2,9 +2,10 @@ using Dapper;
 using System.Data.SqlClient;
 
 public class BD
-{
+{   
     private static string _connectionString{get;set;} = @"Server=localhost;DataBase=Aid Together;Trusted_Connection=True;";
 
+  
     static public Usuario IniciarSesion (string idUsuario,string contraseña)
     {
         string sql = "exec IniciarSesion @IdUsuario, @Contraseña";

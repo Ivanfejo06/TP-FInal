@@ -20,15 +20,21 @@ public class HomeController : Controller
     
      ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
 
-        return View("UpdatearDatos");
+        return View();
        
+    }
+
+    public IActionResult TraerUsuario(string IdUsuario, string Contraseña)
+    {
+        ViewBag.Usuario = BD.IniciarSesion(IdUsuario,Contraseña);
+        return View("index");
     }
 
     public IActionResult Posteos(int idForo)
     {
         int Cantidad = 9;
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
-        return View ("Posteos");
+        return View ("Posteo");
     }
     
 
@@ -36,9 +42,9 @@ public class HomeController : Controller
     {
         int Cantidad = 10;
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
-        return View("Categoria"); 
+        return View("Categorias"); 
     }
-
+      
     public IActionResult InicioSesion ()
     {
         return View("InicioSesion");
@@ -67,10 +73,7 @@ public class HomeController : Controller
         return View("UpdatearDatos");
     }
 
-   
-
     //inserts
-
   public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
         BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);

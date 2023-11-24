@@ -34,16 +34,14 @@ Alter procedure MostrarForos @IdCategoria int, @Cantidad int
 as
 begin
 declare @masDiez int = @Cantidad + 10
-Select * from Foros where IdCategoria=@IdCategoria order by (select count(IdPosteo) from posteos where posteos.IdForo = Foros.IdForo)
-OFFSET @cantidad rows fetch next @masDiez rows only
+Select * from Foros where IdCategoria=@IdCategoria 
 end
 
 Alter procedure MostrarPosteos @IdForo int, @Cantidad int
 as 
 begin
 declare @masDiez int = @Cantidad + 10
-Select * from Posteos where IdForo=@IdForo order by (select count(IdComentario) from ComentarioPosteos where ComentarioPosteos.IdPosteo = Posteos.IdPosteo)
-OFFSET @Cantidad rows fetch next @masDiez rows only
+Select * from Posteos where IdForo=@IdForo 
 end
 
 Alter procedure MostrarComentariosPosteosASC
