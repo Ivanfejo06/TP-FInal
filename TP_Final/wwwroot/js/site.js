@@ -157,3 +157,73 @@ function ValidateUser()
         }
     });
 }
+
+function ValidateTitle()
+{  
+    let leng = false;
+    let long = false;
+    let user = document.getElementById("titulo")
+
+    //Checking length
+    if(user.value.length >= 15){leng = true;}
+
+    //Checking length
+    if(user.value.length <= 50){long = true;}
+
+    if(!leng)
+    {
+        TitleAlert.textContent = "El titulo debe tener al menos 15 caracteres.";
+    }
+    if(!long)
+    {
+        TitleAlert.textContent = "El titulo debe tener menos de 50 caracteres.";
+    }
+    if(leng && long){TitleAlert.textContent = "";}
+}
+
+function ValidateSubtitle()
+{  
+    let leng = false;
+    let long = false;
+    let user = document.getElementById("titulo")
+
+    //Checking length
+    if(user.value.length >= 15){leng = true;}
+
+    //Checking length
+    if(user.value.length <= 50){long = true;}
+
+    if(!leng)
+    {
+        DescAlert.textContent = "El titulo debe tener al menos 15 caracteres.";
+    }
+    if(!long)
+    {
+        DescAlert.textContent = "El titulo debe tener menos de 50 caracteres.";
+    }
+    if(leng && long){TitleAlert.textContent = "";}
+}
+
+function ValidateDesc()
+{  
+    let leng = false;
+    let long = false;
+    let user = document.getElementById("titulo")
+
+    //Checking length
+    if(user.value.length >= 15){leng = true;}
+
+    //Checking length
+    if(user.value.length <= 50){long = true;}
+
+    if(!leng)
+    {
+        DescAlert.textContent = "El titulo debe tener al menos 15 caracteres.";
+    }
+    if(!long)
+    {
+        DescAlert.textContent = "El titulo debe tener menos de 50 caracteres.";
+    }
+    if(leng && long){TitleAlert.textContent = "";}
+}
+

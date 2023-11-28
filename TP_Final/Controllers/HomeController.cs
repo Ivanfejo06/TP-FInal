@@ -56,6 +56,20 @@ public class HomeController : Controller
         return View("Registro");
     }
 
+    public IActionResult CrearPosteo(int Id, string IdU)
+    {
+        ViewBag.IdForo = Id;
+        ViewBag.IdUsuario = IdU;
+        return View("CrearPosteo");
+    }
+
+    public IActionResult CrearForo(int Id, string IdU)
+    {
+        ViewBag.IdCategoria = Id;
+        ViewBag.IdUsuario = IdU;
+        return View("CrearForo");
+    }
+
     public IActionResult MostrarPerfil(string IdUsuario)
     {
         ViewBag.InfoPerfil = BD.MostrarPerfil(IdUsuario);

@@ -44,7 +44,7 @@ public class BD
 
     static public List<Foro> MostrarForosPrincipal(int cantidad)
     {
-        string sql = "Exec MostrarForosPrincipal @Cantidad";
+        string sql = "Exec MostrarForoPrincipal @Cantidad";
         List<Foro> f;
         using(SqlConnection db = new SqlConnection(_connectionString)){
            f = db.Query<Foro>(sql, new {Cantidad = cantidad}).ToList();
@@ -53,21 +53,21 @@ public class BD
     }
 
 
-    static public List<Foro> MostrarForos(int IdCategoria, int cantidad){
-        string sql = "exec MostrarForos @idCategoria, @Cantidad";
+    static public List<Foro> MostrarForos(int idCategoria, int cantidad){
+        string sql = "exec MostrarForo @IdCategoria, @Cantidad";
         List<Foro> f ;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            f = db.Query<Foro>(sql, new{idCategoria = IdCategoria, Cantidad=cantidad}).ToList();
+            f = db.Query<Foro>(sql, new{IdCategoria = idCategoria, Cantidad=cantidad}).ToList();
         }
         return f;
     }
 
-    static public Categorias TraerTitulo( int IdCategoria)
+    static public string TraerTitulo(int IdCategoria)
     {
         string sql = "Exec TraerTitulo @idCategoria";
-        Categorias C;
+        string C;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            C = db.QueryFirstOrDefault<Categorias>(sql, new{idCategoria = IdCategoria});
+            C = db.QueryFirstOrDefault<string>(sql, new{idCategoria = IdCategoria});
         }
         return C;
     }

@@ -3,18 +3,18 @@
     <div>
         <h4>Crear foro para </h4>
 
-        <input type="hidden" name="IdCategoria" value="">
+        <input type="hidden" name="IdCategoria" value=@ViewBag.IdCategoria>
 
         <div class = "containerInputs">
             <label for="UserName">Titulo</label>
-            <input name="Titulo" type="text" placeholder = "Titulo del foro" id="titulo" onkeyup="ValidateUser()" required>
+            <input name="Titulo" type="text" placeholder = "Titulo del foro" id="titulo" onkeyup="ValidateTitle()" required>
             <span id="TitleAlert" class="alert"></span>
         </div>
         <div class = "containerInputs">
             <label for="UserName">Descripcion</label>
-            <input type="textarea" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidatePassword()" required>
-            <span id="PasswordAlert" class="alert"></span>
+            <input type="textarea" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidateDesc()" required>
+            <span id="DescAlert" class="alert"></span>
         </div>
-        <input type="hidden" value="" name="IdUsuario">
+        <input type="hidden" value=@ViewBag.IdUsuario name="IdUsuario">
     <div>
 </form>
