@@ -249,7 +249,7 @@ function ValidateDesc()
     {
         DescAlert.textContent = "La descripcion debe tener menos de 400 caracteres.";
     }
-    if(leng && long){TitleAlert.textContent = "";}
+    if(leng && long){DescAlert.textContent = "";}
 }
 
 function ValidateCorpse()
