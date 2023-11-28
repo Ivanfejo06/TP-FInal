@@ -6,6 +6,12 @@ begin
 select * from Usuario where IdUsuario = @Idusuario and Contraseña = @Contraseña
 end;
 
+Create Procedure TraerTitulo @IdCategoria int
+as
+begin
+select Nombre from Categorias where IdCategoria = @IdCategoria
+end;
+
 Alter Procedure MostrarUsuario @idPersona varchar(50)
 as
 begin 
