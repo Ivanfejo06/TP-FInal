@@ -1,32 +1,25 @@
 html {
   font-size: 14px;
 }
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
-
 html {
   position: relative;
   min-height: 100%;
 }
-
 body {
   margin-bottom: 60px;
 }
-
-
 .conteiner
 {
   flex-wrap: wrap;
 }
-
 .card
   {
     width: 30%;
@@ -38,18 +31,15 @@ body {
     cursor: pointer;
     
   }
-
   .card h3
   {
     text-align: center;
   }
-
   .card img
   {
     width: 70%;
     margin-left: 15%;
   }
-
 .containerPerfil
 {
   width: 50%;
@@ -60,7 +50,6 @@ body {
   margin-left: 9%;
   margin-top: 1%;
 }
-
 .containerPerfil .imgFondoPerfil
 {
   position: absolute;
@@ -68,7 +57,6 @@ body {
   height: 30%;
   display: flex;
 }
-
 .containerPerfil .imgPerfil
 {
   position: absolute;
@@ -79,7 +67,6 @@ body {
   margin-top: 15%;
   margin-left: 1%;
 }
-
 .containerPerfil .pDescripcion
 {
   position: relative;
@@ -89,7 +76,6 @@ body {
   margin-right: 10%;
   justify-content: center;
 }
-
 .containerPerfil p 
 {
   position: absolute;
@@ -97,21 +83,16 @@ body {
   margin-top: 22.9%;
   margin-left: 17%;
 }
-
-
 .TituloCategoria
 {
   text-align: center;
   margin-top: 1%;
   margin-right: 2.8%;
 }
-
-
 .ContainerCategoria
 {
   flex-wrap: wrap;
 }
-
 .CardCategoria
 {
   width: 30%;
@@ -122,7 +103,6 @@ body {
     text-align: center;
     cursor: pointer;
 }
-
 .containerConfig
 {
   display: flex;
@@ -134,9 +114,7 @@ body {
   position: absolute;
   margin-left: 9%;
   margin-top: 1%;
-
 }
-
 .containerConfig .imgPerfil
 {
   position: absolute;
@@ -147,7 +125,6 @@ body {
   margin-top: 1%;
   margin-left: 2%;
 }
-
 .containerConfig  .editar
 {
   position: absolute;
@@ -157,20 +134,16 @@ body {
   margin-left: 22%;
   margin-bottom: 100%;
   cursor: pointer;
-
 }
-
 .containerConfig .containerInputs
 {
   margin-top: 5%;
 }
-
 .containerConfig .botonCambio
 {
   position: relative;
   margin-top: 100%;
 }
-
 .boton
 {
   width: 100%;
@@ -194,6 +167,7 @@ body {
 
 .Separador
 {
+
   margin-top: 100%;
 }
 

@@ -16,7 +16,7 @@ public class HomeController : Controller
 
 //Mostrar informacion
 
-    public IActionResult Index(int cantidad,Usuario S)
+    public IActionResult Index(Usuario S)
     {        
         ViewBag.User = S;
         ViewBag.Validation = false;
@@ -24,7 +24,7 @@ public class HomeController : Controller
         {
             ViewBag.Validation = true; 
         }
-        ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
+        ViewBag.ListarForos = BD.MostrarForosPrincipal(9);
         return View();  
     }
 
@@ -95,7 +95,7 @@ public class HomeController : Controller
     public IActionResult IniciarSesion ( string IdUsuario, string Contraseña)
     {
         ViewBag.Usuario= BD.IniciarSesion(IdUsuario,Contraseña);
-        return View("Index");
+        return RedirectToAction("Index",ViewBag.Usuario);
     }
 
     //inserts
