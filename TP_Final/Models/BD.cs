@@ -61,6 +61,16 @@ public class BD
         }
         return f;
     }
+
+    static public Categorias TraerTitulo( int IdCategoria)
+    {
+        string sql = "Exec TraerTitulo @idCategoria";
+        Categorias C;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            C = db.QueryFirstOrDefault<Categorias>(sql, new{idCategoria = IdCategoria});
+        }
+        return C;
+    }
     
     static public List<Posteos> MostrarPosteos(int IdForo, int cantidad){
         string sql = "exec MostrarPosteos @idForo, @Cantidad";

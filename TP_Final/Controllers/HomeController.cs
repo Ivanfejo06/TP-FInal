@@ -41,6 +41,7 @@ public class HomeController : Controller
     public IActionResult Categorias (int idCategoria)
     {
         int Cantidad = 10;
+        ViewBag.Titulo = BD.TraerTitulo(idCategoria);
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
         return View("Categorias"); 
     }
@@ -71,6 +72,12 @@ public class HomeController : Controller
     {
         ViewBag.Usuario = Us;
         return View("UpdatearDatos");
+    }
+
+    public IActionResult IniciarSesion ( string IdUsuario, string Contraseña)
+    {
+        ViewBag.Usuario= BD.IniciarSesion(IdUsuario,Contraseña);
+        return View("Index");
     }
 
     //inserts
