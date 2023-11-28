@@ -1,5 +1,6 @@
-<h3 class = "TituloCategoria">@ViewBag.Titulo</h3>
+<h3 class = "TituloCategoria">@ViewBag.Titulo.Nombre</h3>
 
+<button class = "boton"><a href='@Url.Action("CrearForo", new{Id = @ViewBag.Titulo.IdCategoria, IdU = @ViewBag.IdUsuario})'>Crear Foro</a><button>
 
 @foreach(Foro c in ViewBag.ListForosXcategoria)
 {

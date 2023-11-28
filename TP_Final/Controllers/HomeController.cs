@@ -37,6 +37,7 @@ public class HomeController : Controller
     public IActionResult Posteos(int idForo)
     {
         int Cantidad = 9;
+        ViewBag.Foro = BD.TraerForo(idForo);
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
         return View ("Posteo");
     }
