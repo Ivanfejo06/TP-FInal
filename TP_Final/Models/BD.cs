@@ -62,12 +62,22 @@ public class BD
         return f;
     }
 
-    static public string TraerTitulo(int IdCategoria)
+    static public Categorias TraerTitulo(int IdCategoria)
     {
         string sql = "Exec TraerTitulo @idCategoria";
-        string C;
+        Categorias C;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            C = db.QueryFirstOrDefault<string>(sql, new{idCategoria = IdCategoria});
+            C = db.QueryFirstOrDefault<Categorias>(sql, new{idCategoria = IdCategoria});
+        }
+        return C;
+    }
+
+     static public Foro TraerForo(int IdForo)
+    {
+        string sql = "Exec TraerForo @idForo";
+        Foro C;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            C = db.QueryFirstOrDefault<Foro>(sql, new{idForo = IdForo});
         }
         return C;
     }

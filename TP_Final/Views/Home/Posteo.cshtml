@@ -1,4 +1,6 @@
+<h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
 
+<button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo, IdU = @ViewBag.IdUsuario})'>Crear Posteo</a><button>
 
 @foreach(Posteos p in  ViewBag.ListPosteos)
 {
