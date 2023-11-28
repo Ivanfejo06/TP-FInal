@@ -15,13 +15,17 @@ public class HomeController : Controller
 
 
 //Mostrar informacion
-    public IActionResult Index(int cantidad)
-    {
-    
-     ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
 
-        return View();
-       
+    public IActionResult Index(int cantidad,Usuario S)
+    {        
+        ViewBag.User = S;
+        ViewBag.Validation = false;
+        if(ViewBag.User.Nombre != null)
+        {
+            ViewBag.Validation = true; 
+        }
+        ViewBag.ListarForos = BD.MostrarForosPrincipal(cantidad);
+        return View();  
     }
 
     public IActionResult TraerUsuario(string IdUsuario, string Contraseña)

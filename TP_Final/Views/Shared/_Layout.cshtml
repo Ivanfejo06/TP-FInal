@@ -14,8 +14,14 @@
 <p> hola </p>
 <p> pa </p>
 
-<a href='@Url.Action("InicioSesion")'><img src="/img/image-removebg-preview.png" width="50px"> </a>
-</div>
+@if (ViewBag.Validation == true)
+{
+    <a href='@Url.Action("MostrarPerfil")'><img src="/img/image-removebg-preview.png" width="50px"></a>
+}
+else
+{
+    <a href='@Url.Action("InicioSesion")'><img src="/img/image-removebg-preview.png" width="50px"> </a>
+}
 
 <div class= "sub-navbar">
 
