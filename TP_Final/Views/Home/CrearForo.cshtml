@@ -1,0 +1,20 @@
+<div class="containerConfig">   
+<form Action= '@Url.Action("InsertarForo")' method= "get">
+    <div>
+        <h4>Crear foro para </h4>
+
+        <input type="hidden" name="IdCategoria" value="">
+
+        <div class = "containerInputs">
+            <label for="UserName">Titulo</label>
+            <input name="Titulo" type="text" placeholder = "Titulo del foro" id="titulo" onkeyup="ValidateUser()" required>
+            <span id="TitleAlert" class="alert"></span>
+        </div>
+        <div class = "containerInputs">
+            <label for="UserName">Descripcion</label>
+            <input type="textarea" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidatePassword()" required>
+            <span id="PasswordAlert" class="alert"></span>
+        </div>
+        <input type="hidden" value="" name="IdUsuario">
+    <div>
+</form>
