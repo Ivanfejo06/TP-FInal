@@ -1,5 +1,10 @@
 /*Traer informacion*/
 
+Create Procedure TraerForo @idForo int as
+begin
+select * from Foro where IdForo = @idForo
+end;
+
 Create Procedure IniciarSesion @IdUsuario varchar(50), @Contraseña varchar(50)
 as
 begin
