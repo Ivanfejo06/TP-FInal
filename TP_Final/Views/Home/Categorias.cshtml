@@ -1,7 +1,7 @@
 <p class = "TituloCategoria"> </p>
 
 
-@foreach(Foros c in ViewBag.ListForosXcategoria)
+@foreach(Foro c in ViewBag.ListForosXcategoria)
 {
     <a href= '@Url.Action("Posteos", new {IdForo = c.IdForo})'> 
 <div class= "CardCategoria"> 

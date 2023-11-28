@@ -26,15 +26,14 @@ end
 Alter Procedure MostrarForosPrincipal @Cantidad int as
 begin
 declare @masDiez int = @Cantidad + 10
-Select * from Foros  order by (Select Count(IdPosteo) from Posteos)
-OFFSET @Cantidad rows fetch next @masDiez rows only
+Select * from Foro  order by (Select Count(IdPosteo) from Posteos)
 end
 
 Alter procedure MostrarForos @IdCategoria int, @Cantidad int
 as
 begin
 declare @masDiez int = @Cantidad + 10
-Select * from Foros where IdCategoria=@IdCategoria 
+Select * from Foro where IdCategoria=@IdCategoria 
 end
 
 Alter procedure MostrarPosteos @IdForo int, @Cantidad int
@@ -51,7 +50,6 @@ as
 begin
 declare @masDiez int = @Cantidad + 10
 Select * from ComentarioPosteos where IdPosteo = @idPosteo order by Fecha asc
-offset @Cantidad rows fetch next @masDiez rows only
 end;
 
 Alter procedure MostrarComentariosPosteosDESC
@@ -61,7 +59,6 @@ as
 begin
 declare @masDiez int = @Cantidad + 10
 Select * from ComentarioPosteos where IdPosteo = @idPosteo order by Fecha desc
-offset @Cantidad rows fetch next @masDiez rows only
 end;
 
 /*Insertar informacion*/

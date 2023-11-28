@@ -42,24 +42,24 @@ public class BD
         return Usuario;
     }
 
-    static public List<Foros> MostrarForosPrincipal(int cantidad)
+    static public List<Foro> MostrarForosPrincipal(int cantidad)
     {
         string sql = "Exec MostrarForosPrincipal @Cantidad";
-        List<Foros> foros;
+        List<Foro> f;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-           foros = db.Query<Foros>(sql, new {Cantidad = cantidad}).ToList();
+           f = db.Query<Foro>(sql, new {Cantidad = cantidad}).ToList();
         } 
-        return foros;
+        return f;
     }
 
 
-    static public List<Foros> MostrarForos(int IdCategoria, int cantidad){
+    static public List<Foro> MostrarForos(int IdCategoria, int cantidad){
         string sql = "exec MostrarForos @idCategoria, @Cantidad";
-        List<Foros> foros ;
+        List<Foro> f ;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            foros = db.Query<Foros>(sql, new{idCategoria = IdCategoria, Cantidad=cantidad}).ToList();
+            f = db.Query<Foro>(sql, new{idCategoria = IdCategoria, Cantidad=cantidad}).ToList();
         }
-        return foros;
+        return f;
     }
     
     static public List<Posteos> MostrarPosteos(int IdForo, int cantidad){
@@ -70,19 +70,19 @@ public class BD
         }
         return posteos;
     }
-    static public List<ComentarioPosteos> MostrarComentariosASC(int IdPosteo, int cantidad){
+    static public List<ComentarioPosteo> MostrarComentariosASC(int IdPosteo, int cantidad){
         string sql = "exec MostrarComentariosASC @idPosteo, @Cantidad";
-        List<ComentarioPosteos> comentarios;
+        List<ComentarioPosteo> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            comentarios = db.Query<ComentarioPosteos>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
+            comentarios = db.Query<ComentarioPosteo>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
         }
         return comentarios;
     }
-    static public List<ComentarioPosteos> MostrarComentariosDESC(int IdPosteo, int cantidad){
+    static public List<ComentarioPosteo> MostrarComentariosDESC(int IdPosteo, int cantidad){
         string sql = "exec MostrarComentariosDESC @idPosteo, @Cantidad";
-        List<ComentarioPosteos> comentarios;
+        List<ComentarioPosteo> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            comentarios = db.Query<ComentarioPosteos>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
+            comentarios = db.Query<ComentarioPosteo>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
         }
         return comentarios;
     }
