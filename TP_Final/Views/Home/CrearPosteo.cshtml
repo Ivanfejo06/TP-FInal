@@ -5,7 +5,7 @@
 
         <div class = "containerInputs">
             <label for="UserName">Titulo</label>
-            <input name="Titulo" type="text" placeholder = "Titulo del posteo" id="titulo" onkeyup="ValidateTitle()" required>
+            <input name="Titulo" type="text" placeholder = "Titulo del posteo" id="titulo" onkeyup="ValidateTitlePosteos()" required>
             <span id="TitleAlert" class="alert"></span>
         </div>
 
@@ -29,5 +29,9 @@
 
         <input type="hidden" value=@ViewBag.IdUsuario name="IdUsuario">
         <input type="hidden" value=@ViewBag.IdForo name="IdForo">
+
+        <div class = "containerInputs">
+            <button class="boton" id="botonCrearUsuario" disabled>Crear Posteo</button>
+        </div>
     <div>
 </form>

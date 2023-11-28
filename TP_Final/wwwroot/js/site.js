@@ -145,7 +145,9 @@ function ValidateUser()
         type: 'POST',
         url: 'Home/UsuarioExists', // Reemplaza esto con la URL de tu acción de validación en el servidor
         data: { IdUsuario: username},
+        typeData: 'JSON',
         success: function(response) {
+            console.log(response);
             if (response == NULL) {
                 $('#UserAlert').text('Nombre de usuario disponible').removeClass('alert-error').addClass('alert-success');
             } else {
@@ -181,7 +183,7 @@ function ValidateTitle()
     if(leng && long){TitleAlert.textContent = "";}
 }
 
-function ValidateSubtitle()
+function ValidateTitlePosteos()
 {  
     let leng = false;
     let long = false;
@@ -191,15 +193,38 @@ function ValidateSubtitle()
     if(user.value.length >= 15){leng = true;}
 
     //Checking length
-    if(user.value.length <= 50){long = true;}
+    if(user.value.length <= 200){long = true;}
 
     if(!leng)
     {
-        DescAlert.textContent = "El titulo debe tener al menos 15 caracteres.";
+        TitleAlert.textContent = "El titulo debe tener al menos 15 caracteres.";
     }
     if(!long)
     {
-        DescAlert.textContent = "El titulo debe tener menos de 50 caracteres.";
+        TitleAlert.textContent = "El titulo debe tener menos de 200 caracteres.";
+    }
+    if(leng && long){TitleAlert.textContent = "";}
+}
+
+function ValidateSubtitle()
+{  
+    let leng = false;
+    let long = false;
+    let user = document.getElementById("subtitle")
+
+    //Checking length
+    if(user.value.length >= 15){leng = true;}
+
+    //Checking length
+    if(user.value.length <= 400){long = true;}
+
+    if(!leng)
+    {
+        SubAlert.textContent = "El subtitulo debe tener al menos 15 caracteres.";
+    }
+    if(!long)
+    {
+        SubAlert.textContent = "El subtitulo debe tener menos de 400 caracteres.";
     }
     if(leng && long){TitleAlert.textContent = "";}
 }
@@ -208,22 +233,44 @@ function ValidateDesc()
 {  
     let leng = false;
     let long = false;
-    let user = document.getElementById("titulo")
+    let user = document.getElementById("Desc")
 
     //Checking length
     if(user.value.length >= 15){leng = true;}
 
     //Checking length
-    if(user.value.length <= 50){long = true;}
+    if(user.value.length <= 400){long = true;}
 
     if(!leng)
     {
-        DescAlert.textContent = "El titulo debe tener al menos 15 caracteres.";
+        DescAlert.textContent = "La descripcion debe tener al menos 15 caracteres.";
     }
     if(!long)
     {
-        DescAlert.textContent = "El titulo debe tener menos de 50 caracteres.";
+        DescAlert.textContent = "La descripcion debe tener menos de 400 caracteres.";
     }
     if(leng && long){TitleAlert.textContent = "";}
 }
 
+function ValidateCorpse()
+{  
+    let leng = false;
+    let long = false;
+    let user = document.getElementById("corpse")
+
+    //Checking length
+    if(user.value.length >= 1){leng = true;}
+
+    //Checking length
+    if(user.value.length <= 5000){long = true;}
+
+    if(!leng)
+    {
+        CorpAlert.textContent = "El cuerpo debe tener algo de informacion.";
+    }
+    if(!long)
+    {
+        CorpAlert.textContent = "El cuerpo debe tener menos de 5000 caracteres.";
+    }
+    if(leng && long){TitleAlert.textContent = "";}
+}
