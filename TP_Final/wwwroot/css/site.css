@@ -179,4 +179,20 @@ body {
   height: 100%;
 }
 
+.Comentario{
+  text-align: center;
+  height: 10%;
+  background-color:#d1efec;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
+.Comentarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

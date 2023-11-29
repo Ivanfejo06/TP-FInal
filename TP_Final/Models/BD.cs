@@ -72,6 +72,16 @@ public class BD
         return C;
     }
 
+    static public Posteos TraerPosteo(int IdPosteo)
+    {
+        string sql = "Exec TraerPosteo @idPosteo";
+        Posteos C;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            C = db.QueryFirstOrDefault<Posteos>(sql, new{idPosteo = IdPosteo});
+        }
+        return C;
+    }
+
      static public Foro TraerForo(int IdForo)
     {
         string sql = "Exec TraerForo @idForo";
@@ -91,7 +101,7 @@ public class BD
         return posteos;
     }
     static public List<ComentarioPosteo> MostrarComentariosASC(int IdPosteo, int cantidad){
-        string sql = "exec MostrarComentariosASC @idPosteo, @Cantidad";
+        string sql = "exec MostrarComentariosPosteosASC @idPosteo, @Cantidad";
         List<ComentarioPosteo> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             comentarios = db.Query<ComentarioPosteo>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();
@@ -99,7 +109,7 @@ public class BD
         return comentarios;
     }
     static public List<ComentarioPosteo> MostrarComentariosDESC(int IdPosteo, int cantidad){
-        string sql = "exec MostrarComentariosDESC @idPosteo, @Cantidad";
+        string sql = "exec MostrarComentariosPosteosDESC @idPosteo, @Cantidad";
         List<ComentarioPosteo> comentarios;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             comentarios = db.Query<ComentarioPosteo>(sql, new{idPosteo = IdPosteo, Cantidad = cantidad}).ToList();

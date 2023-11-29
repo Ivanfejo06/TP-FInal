@@ -42,6 +42,15 @@ public class HomeController : Controller
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
         return View ("Foro");
     }
+
+    public IActionResult Posteo(int idPosteo, Usuario User)
+    {
+        int Cantidad = 9;
+        ViewBag.Usuario = User;
+        ViewBag.Posteo = BD.TraerPosteo(idPosteo);
+        ViewBag.ListComentarios = BD.MostrarComentariosASC(idPosteo, Cantidad);
+        return View ("Posteo");
+    }
     
 
     public IActionResult Categoria (int idCategoria, Usuario User)

@@ -1,4 +1,5 @@
 <h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
+<p>@ViewBag.Foro.Descripcion</p>
 
 @if(ViewBag.Usuario != null)
 {
@@ -9,14 +10,16 @@
 
 @foreach(Posteos p in  ViewBag.ListPosteos)
 {
-    <div class = "Posteo">
-        <div class= "TopBar"> 
-            <h5>@p.Titulo</h5>
-        </div>
+    <a href='@Url.Action("Posteo",new{idPosteo = p.IdPosteo})'>
+        <div class = "Posteo">
+            <div class= "TopBar"> 
+                <h5>@p.Titulo</h5>
+            </div>
+            
+            <div class= "Descripcion">
+                <p>@p.Descripcion</p>
+            </div>
         
-        <div class= "Descripcion">
-            <p>@p.Descripcion</p>
         </div>
-       
-    </div>
+    </a>
 }

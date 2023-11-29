@@ -1,12 +1,18 @@
-         
-<div class= "conteiner">
-<div class = "card"> 
-<h3> </h3>
-<img src= "">
-<p></p>
-<img src= "/img/comentario-removebg-preview.png" width= "50px">
+<h3 class = "TituloCategoria">@ViewBag.Posteo.Titulo</h3>
+<h6 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h6>
+<p>@ViewBag.Posteo.Descripcion</p>
+<p>@ViewBag.Posteo.Cuerpo</p>
+
+<div class="Comentarios">
+    @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
+    {
+        <div class = "Comentario">
+            <div class= ""> 
+                <h5>@p.IdUsuario</h5>
+            </div>
+            <div class= "">
+                <p>@p.Cuerpo</p>
+            </div>
+        </div>
+    }
 </div>
-</div>
-         
-         
-         
