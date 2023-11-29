@@ -5,12 +5,11 @@
 @foreach(Foro c in ViewBag.ListForosXcategoria)
 {
     <a href= '@Url.Action("Posteos", new {IdForo = c.IdForo})'> 
-<div class= "CardCategoria"> 
-
-<h3>@c.Titulo </h3>
-<div><img src= ""> </div>
-<div><p>@c.Descripcion </p> </div>
-</div>
-</a>
+        <div class= "CardCategoria"> 
+            <h3>@c.Titulo </h3>
+            <div><img src= ""></div>
+            <div><p>@c.Descripcion </p></div>
+        </div>
+    </a>
 }
 

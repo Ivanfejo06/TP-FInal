@@ -11,28 +11,26 @@
 </head>
 <body>
     <div class = "navbar">
-<p> hola </p>
-<p> pa </p>
+        <p>Foto</p>
+        <a href='@Url.Action("Index")'><p>Aid Together</p></a>
 
-@if (ViewBag.Validation == true)
-{
-    <a href='@Url.Action("MostrarPerfil")'><img src="/img/image-removebg-preview.png" width="50px"></a>
-}
-else
-{
-    <a href='@Url.Action("InicioSesion")'><img src="/img/image-removebg-preview.png" width="50px"> </a>
-}
+        @if (ViewBag.Validation == true)
+        {
+            <a href='@Url.Action("MostrarPerfil")'><img src="/img/image-removebg-preview.png" width="50px"></a>
+        }
+        else
+        {
+            <a href='@Url.Action("InicioSesion")'><img src="/img/image-removebg-preview.png" width="50px"> </a>
+        }
+    </div>
 
-<div class= "sub-navbar">
-
-<a href='@Url.Action("Categorias",new{idCategoria = 1})'><p>Deportes</p></a>
-<a href='@Url.Action("Categorias",new{idCategoria = 2})'><p>Alimentacion</p></a>
-<a href='@Url.Action("Categorias",new{idCategoria = 3})'><p>Primeros Auxilios</p></a>
-<a href='@Url.Action("Categorias",new{idCategoria = 4})'><p>Enfermedades</p></a>
-<a href='@Url.Action("Categorias",new{idCategoria = 5})'><p>Infancia</p></a>
-
-
-</div>
+    <div class= "sub-navbar">
+        <a href='@Url.Action("Categorias",new{idCategoria = 1})'><p>Deportes</p></a>
+        <a href='@Url.Action("Categorias",new{idCategoria = 2})'><p>Alimentacion</p></a>
+        <a href='@Url.Action("Categorias",new{idCategoria = 3})'><p>Primeros Auxilios</p></a>
+        <a href='@Url.Action("Categorias",new{idCategoria = 4})'><p>Enfermedades</p></a>
+        <a href='@Url.Action("Categorias",new{idCategoria = 5})'><p>Infancia</p></a>
+    </div>
 
 
 
@@ -41,6 +39,7 @@ else
             @RenderBody()
         </main>
     </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

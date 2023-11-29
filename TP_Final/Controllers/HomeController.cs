@@ -39,7 +39,7 @@ public class HomeController : Controller
         int Cantidad = 9;
         ViewBag.Foro = BD.TraerForo(idForo);
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
-        return View ("Posteo");
+        return View ("Foro");
     }
     
 
@@ -48,7 +48,7 @@ public class HomeController : Controller
         int Cantidad = 10;
         ViewBag.Titulo = BD.TraerTitulo(idCategoria);
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
-        return View("Categorias"); 
+        return View("Categoria"); 
     }
       
     public IActionResult InicioSesion ()
@@ -70,7 +70,7 @@ public class HomeController : Controller
 
     public IActionResult CrearForo(int Id, string IdU)
     {
-        ViewBag.IdCategoria = Id;
+        ViewBag.IdCategoria = BD.TraerTitulo(Id);
         ViewBag.IdUsuario = IdU;
         return View("CrearForo");
     }

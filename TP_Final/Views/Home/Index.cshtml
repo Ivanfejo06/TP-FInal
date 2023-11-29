@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-@foreach(Foro f in ViewBag.ListarForos )
+@foreach(Foro f in ViewBag.ListarForos)
 {
 <a href= '@Url.Action("Posteos", new {idForo = f.IdForo})'>
 <div class= "conteiner">
