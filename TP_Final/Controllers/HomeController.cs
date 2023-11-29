@@ -23,6 +23,10 @@ public class HomeController : Controller
         if(ViewBag.User.Nombre != null)
         {
             ViewBag.Validation = true; 
+            ViewBag.ErrorMessage = "";
+        }
+        else{
+            ViewBag.ErrorMessage = "No se pudo inciar sesion";
         }
         ViewBag.ListarForos = BD.MostrarForosPrincipal(9);
         return View();  
