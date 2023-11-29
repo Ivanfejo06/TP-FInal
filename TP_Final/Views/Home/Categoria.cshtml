@@ -1,10 +1,11 @@
 <h3 class = "TituloCategoria">@ViewBag.Titulo.Nombre</h3>
-
+@if(ViewBag.Usuario != null)
+{
 <button class = "boton"><a href='@Url.Action("CrearForo", new{Id = @ViewBag.Titulo.IdCategoria, IdU = @ViewBag.IdUsuario})'>Crear Foro</a></button>
-
+}
 @foreach(Foro c in ViewBag.ListForosXcategoria)
 {
-    <a href= '@Url.Action("Posteos", new {IdForo = c.IdForo})'> 
+    <a href= '@Url.Action("Foro", new {IdForo = c.IdForo})'> 
         <div class= "CardCategoria"> 
             <h3>@c.Titulo </h3>
             <div><img src= ""></div>

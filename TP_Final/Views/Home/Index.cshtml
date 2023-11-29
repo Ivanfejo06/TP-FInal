@@ -4,7 +4,7 @@
 
 @foreach(Foro f in ViewBag.ListarForos)
 {
-<a href= '@Url.Action("Posteos", new {idForo = f.IdForo})'>
+<a href= '@Url.Action("Foro", new {idForo = f.IdForo})'>
 <div class= "conteiner">
 <div class = "card"> 
 <h3>@f.Titulo </h3>

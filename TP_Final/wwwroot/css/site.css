@@ -155,17 +155,20 @@ body {
   display: flex;
   justify-content: center;
   width: 30%;
-  height: 70%;
+  height: 8%;
   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
   text-align: center;
   position: absolute;
   margin-left: 20%;
   margin-top: 1%;
+  overflow: hidden;
 }
 
-.Separador
+.Posteo h5
 {
-  margin-top: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 .Posteo .TopBar
@@ -173,12 +176,7 @@ body {
   background-color:#d1efec;
   position: relative;
   width: 100%;
-  height: 10%;
+  height: 100%;
 }
 
-.Posteo .Descripcion
-{
-  position: relative;
-  bottom: 0%;
-}
 
