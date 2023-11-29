@@ -34,18 +34,20 @@ public class HomeController : Controller
         return RedirectToAction("index",ViewBag.Usuario);
     }
 
-    public IActionResult Posteos(int idForo)
+    public IActionResult Foro(int idForo,Usuario User)
     {
         int Cantidad = 9;
+        ViewBag.Usuario = User;
         ViewBag.Foro = BD.TraerForo(idForo);
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
         return View ("Foro");
     }
     
 
-    public IActionResult Categorias (int idCategoria)
+    public IActionResult Categoria (int idCategoria, Usuario User)
     {
         int Cantidad = 10;
+        ViewBag.Usuario = User;
         ViewBag.Titulo = BD.TraerTitulo(idCategoria);
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
         return View("Categoria"); 

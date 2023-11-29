@@ -1,17 +1,22 @@
 <h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
 
-<button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo, IdU = @ViewBag.IdUsuario})'>Crear Posteo</a></button>
+@if(ViewBag.Usuario != null)
+{
+ <button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo, IdU = @ViewBag.IdUsuario})'>Crear Posteo</a></button>
+}
+
+
 
 @foreach(Posteos p in  ViewBag.ListPosteos)
 {
     <div class = "Posteo">
-        <div class= "TopBar"> @p.Titulo
-            <p>@p.IdUsuario </p>
+        <div class= "TopBar"> 
+            <h5>@p.Titulo</h5>
         </div>
         
         <div class= "Descripcion">
             <p>@p.Descripcion</p>
         </div>
+       
     </div>
 }
-
