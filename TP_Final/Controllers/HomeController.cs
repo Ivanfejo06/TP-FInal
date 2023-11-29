@@ -31,7 +31,7 @@ public class HomeController : Controller
     public IActionResult TraerUsuario(string IdUsuario, string Contraseña)
     {
         ViewBag.Usuario = BD.IniciarSesion(IdUsuario,Contraseña);
-        return View("index");
+        return RedirectToAction("index",ViewBag.Usuario);
     }
 
     public IActionResult Posteos(int idForo)
