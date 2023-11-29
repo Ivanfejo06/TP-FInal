@@ -14,10 +14,10 @@
         <p>Foto</p>
         <a href='@Url.Action("Index")'><p>Aid Together</p></a>
 
-        @if (ViewBag.Validacion == true)
+        @if (ViewBag.Validation == true)
         {
             <a href='@Url.Action("MostrarPerfil")'><img src="/img/image-removebg-preview.png" width="50px"></a>
-            ViewBag.Usuario = User;
+            ViewBag.Usuario = ViewBag.User;
         }
         else
         {
@@ -27,11 +27,11 @@
     </div>
 
     <div class= "sub-navbar">
-        <a href='@Url.Action("Categoria",new{idCategoria = 1,ViewBag.Usuario})'><p>Deportes</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 2,ViewBag.Usuario})'><p>Alimentacion</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 3,ViewBag.Usuario})'><p>Primeros Auxilios</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 4,ViewBag.Usuario})'><p>Enfermedades</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 5,ViewBag.Usuario})'><p>Infancia</p></a>
+        <a href='@Url.Action("Categoria",new{idCategoria = 1,User = ViewBag.Usuario})'><p>Deportes</p></a>
+        <a href='@Url.Action("Categoria",new{idCategoria = 2,User = ViewBag.Usuario})'><p>Alimentacion</p></a>
+        <a href='@Url.Action("Categoria",new{idCategoria = 3,User = ViewBag.Usuario})'><p>Primeros Auxilios</p></a>
+        <a href='@Url.Action("Categoria",new{idCategoria = 4,User = ViewBag.Usuario})'><p>Enfermedades</p></a>
+        <a href='@Url.Action("Categoria",new{idCategoria = 5,User = ViewBag.Usuario})'><p>Infancia</p></a>
     </div>
 
 
