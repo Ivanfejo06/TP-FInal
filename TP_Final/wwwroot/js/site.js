@@ -139,23 +139,18 @@ function ValidateUser()
     }
     if(leng && long){UserAlert.textContent = "";}
 
-    var username = $('#user').val();
-
     $.ajax({
+        url: '/Home/UserExists', // Reemplaza con la URL de tu controlador de servidor
         type: 'POST',
-        url: 'Home/UsuarioExists', // Reemplaza esto con la URL de tu acción de validación en el servidor
-        data: { IdUsuario: username},
-        typeData: 'JSON',
+        datatype: 'JSON',
+        data: { IdUsuario: user },
         success: function(response) {
-            console.log(response);
-            if (response == NULL) {
-                $('#UserAlert').text('Nombre de usuario disponible').removeClass('alert-error').addClass('alert-success');
-            } else {
-                $('#UserAlert').text('Nombre de usuario no disponible').removeClass('alert-success').addClass('alert-error');
-            }
+            // Manejar la respuesta del servidor
+            $('#UserAlert').text(response);
         },
-        error: function(response){
-            $('#UserAlert').text('no anda').removeClass('alert-error').addClass('alert-success');
+        error: function() {
+            // Manejar errores de la solicitud Ajax
+            $('#UserAlert').text('Error al realizar la solicitud Ajax.');
         }
     });
 }
