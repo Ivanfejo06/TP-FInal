@@ -5,6 +5,11 @@ begin
 select * from Foro where IdForo = @idForo
 end;
 
+Create Procedure TraerPosteo @idPosteo int as
+begin
+select * from Posteos where IdPosteo = @idPosteo
+end;
+
 Create Procedure IniciarSesion @IdUsuario varchar(50), @Contraseña varchar(50)
 as
 begin
