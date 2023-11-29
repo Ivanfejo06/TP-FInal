@@ -206,3 +206,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}

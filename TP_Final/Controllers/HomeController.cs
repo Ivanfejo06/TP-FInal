@@ -124,7 +124,7 @@ public class HomeController : Controller
     public IActionResult InsertComentario (string Comentario,DateTime fecha,string IdUsuario,int IdPosteo)
     {
             BD.InsertarComentario(Comentario,fecha,IdUsuario,IdPosteo);
-            return RedirectToAction("Posteos");
+            return RedirectToAction("Posteo");
     }
 
     public IActionResult InsertPosteo(string Titulo,string Subtitulo,string Descripcion,string Cuerpo, string IdUsuario, int IdForo)
