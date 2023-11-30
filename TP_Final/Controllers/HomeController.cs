@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TP_Final.Models;
+using System.Globalization;
 
 namespace TP_Final.Controllers;
 
@@ -18,7 +19,7 @@ public class HomeController : Controller
 
     public IActionResult Index(Usuario S)
     {        
-        ViewBag.User = S;
+        ViewBag.User = BD.UserUsuario("adm");
         ViewBag.Validation = false;
         if(ViewBag.User.Nombre != null)
         {
@@ -35,11 +36,13 @@ public class HomeController : Controller
     public IActionResult TraerUsuario(string IdUsuario, string Contraseña)
     {
         ViewBag.Usuario = BD.IniciarSesion(IdUsuario,Contraseña);
-        return RedirectToAction("index",ViewBag.Usuario);
+        ViewBag.User = BD.UserUsuario("adm");
+        return View ("index");
     }
 
-    public IActionResult Foro(int idForo,Usuario User)
+    public IActionResult Foro(int idForo)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         int Cantidad = 9;
         ViewBag.Usuario = User;
         ViewBag.Foro = BD.TraerForo(idForo);
@@ -47,8 +50,9 @@ public class HomeController : Controller
         return View ("Foro");
     }
 
-    public IActionResult Posteo(int idPosteo, Usuario User)
+    public IActionResult Posteo(int idPosteo)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         int Cantidad = 9;
         ViewBag.Usuario = User;
         ViewBag.Posteo = BD.TraerPosteo(idPosteo);
@@ -59,6 +63,7 @@ public class HomeController : Controller
 
     public IActionResult Categoria (int idCategoria, Usuario User)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         int Cantidad = 10;
         ViewBag.Usuario = User;
         ViewBag.Titulo = BD.TraerTitulo(idCategoria);
@@ -68,89 +73,103 @@ public class HomeController : Controller
       
     public IActionResult InicioSesion ()
     {
+        ViewBag.User = BD.UserUsuario("adm");
         return View("InicioSesion");
     }
 
     public IActionResult Registrarse()
     {
+        ViewBag.User = BD.UserUsuario("adm");
         return View("Registro");
     }
 
-    public IActionResult CrearPosteo(int Id, string IdU)
+    public IActionResult CrearPosteo(int Id)
     {
         ViewBag.IdForo = Id;
-        ViewBag.IdUsuario = IdU;
+        ViewBag.User = BD.UserUsuario("adm");
         return View("CrearPosteo");
     }
 
-    public IActionResult CrearForo(int Id, string IdU)
+    public IActionResult CrearForo(int Id)
     {
+        //ViewBag.Usuario.IdUsuario name="IdUsuario";
+        ViewBag.User = BD.UserUsuario("adm");
         ViewBag.IdCategoria = BD.TraerTitulo(Id);
-        ViewBag.IdUsuario = IdU;
         return View("CrearForo");
     }
 
     public IActionResult MostrarPerfil(string IdUsuario)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         ViewBag.InfoPerfil = BD.MostrarPerfil(IdUsuario);
         return View("Perfil");
     }
 
     public IActionResult MostrarConfiguracion (string IdUsuario)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         ViewBag.Usuario = BD.MostrarPerfil(IdUsuario);
         return View("Configuracion");
     }
 
     public IActionResult UpdateDataUsuario(Usuario Us)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         ViewBag.Usuario = Us;
         return View("UpdatearDatos");
     }
 
     public IActionResult IniciarSesion ( string IdUsuario, string Contraseña)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         ViewBag.Usuario= BD.IniciarSesion(IdUsuario,Contraseña);
-        return RedirectToAction("Index",ViewBag.Usuario);
+        return View("Index");
     }
 
     //inserts
   public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
         return RedirectToAction ("InicioSesion");
     }
 
-    public IActionResult InsertComentario (string Comentario,DateTime fecha,string IdUsuario,int IdPosteo)
+    public IActionResult InsertComentario (string Comentario,string IdUsuario,int IdPosteo)
     {
-            BD.InsertarComentario(Comentario,fecha,IdUsuario,IdPosteo);
-            return RedirectToAction("Posteo");
+        ViewBag.User = BD.UserUsuario("adm");
+        DateTime fecha = DateTime.Now;
+        BD.InsertarComentario(Comentario,fecha,IdUsuario,IdPosteo);
+        return RedirectToAction("Posteo",new{idPosteo=IdPosteo});
     }
 
     public IActionResult InsertPosteo(string Titulo,string Subtitulo,string Descripcion,string Cuerpo, string IdUsuario, int IdForo)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         BD.InsertarPosteo(Titulo,Subtitulo,Descripcion,Cuerpo,IdUsuario,IdForo);
-       return RedirectToAction ("Posteos");
+        return RedirectToAction ("Foro", new{idForo = IdForo});
     }
 
-    public IActionResult InsertForo (int idCategoria,string Titulo,string Descripcion,string IdUsuario)
+    public IActionResult InsertForo (int IdCategoria, string Titulo, string Descripcion, string IdUsuario)
     {
-            BD.InsertarForo(idCategoria,Titulo,Descripcion,IdUsuario);
-            return RedirectToAction ("Categorias");
+        ViewBag.User = BD.UserUsuario("adm");
+        BD.InsertarForo(IdCategoria,Titulo,Descripcion,IdUsuario);
+        return RedirectToAction ("Categoria",new{idCategoria = IdCategoria});
     }
 
     //Update
 
         public IActionResult UpdatearUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto,string Descripcion,string ImagenFondo)
         {
-                BD.UpdatearUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto,Descripcion,ImagenFondo);
-                return RedirectToAction ("MostrarConfiguracion");
+            ViewBag.User = BD.UserUsuario("adm");
+            BD.UpdatearUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto,Descripcion,ImagenFondo);
+            return RedirectToAction ("MostrarConfiguracion");
         }
 
         public IActionResult UpdatearComentario(string IdUsuario,string Cuerpo,int IdComentario)
         {
+            ViewBag.User = BD.UserUsuario("adm");
             BD.UpdatearComentario(IdUsuario,Cuerpo,IdComentario);
-           return RedirectToAction ("Posteos");
+            return RedirectToAction ("Posteos");
         }
 
     //deletes
@@ -176,6 +195,7 @@ public class HomeController : Controller
 
     public string UsuarioExists(string IdUsuario)
     {
+        ViewBag.User = BD.UserUsuario("adm");
         return BD.UsuarioExists(IdUsuario);
     }
 

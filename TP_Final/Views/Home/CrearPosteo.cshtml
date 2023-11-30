@@ -1,37 +1,40 @@
-<div class="containerConfig">   
-<form Action= '@Url.Action("InsertarPosteo")' method= "get">
-    <div>
-        <h4>Crear posteo para </h4>
+<div class=formu>
+    <div class="containerConfig">   
+        <form Action= '@Url.Action("InsertPosteo")' method= "get">
+            <div>
+                <h4>Crear posteo para </h4>
 
-        <div class = "containerInputs">
-            <label for="UserName">Titulo</label>
-            <input name="Titulo" type="text" placeholder = "Titulo del posteo" id="titulo" onkeyup="ValidateTitlePosteos()" required>
-            <span id="TitleAlert" class="alert"></span>
-        </div>
+                <div class = "containerInputs">
+                    <label for="UserName">Titulo</label>
+                    <input name="Titulo" type="text" placeholder = "Titulo del posteo" id="titulo" onkeyup="ValidateTitlePosteos()" required>
+                    <span id="TitleAlert" class="alert"></span>
+                </div>
 
-        <div class = "containerInputs">
-            <label for="UserName">Subtitulo</label>
-            <input name="Subtitulo" type="text" placeholder = "Subtitulo" id="subtitle" onkeyup="ValidateSubtitle()" required>
-            <span id="SubAlert" class="alert"></span>
-        </div>
+                <div class = "containerInputs">
+                    <label for="UserName">Subtitulo</label>
+                    <input name="Subtitulo" type="text" placeholder = "Subtitulo" id="subtitle" onkeyup="ValidateSubtitle()" required>
+                    <span id="SubAlert" class="alert"></span>
+                </div>
 
-        <div class = "containerInputs">
-            <label for="UserName">Descripcion</label>
-            <input type="textarea" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidateDesc()" required>
-            <span id="DescAlert" class="alert"></span>
-        </div>
+                <div class = "containerInputs">
+                    <label for="UserName">Descripcion</label>
+                    <input type="textarea" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidateDesc()" required>
+                    <span id="DescAlert" class="alert"></span>
+                </div>
 
-         <div class = "containerInputs">
-            <label for="UserName">Cuerpo</label>
-            <input name="Cuerpo" type="text" placeholder = "Cuerpo del Posteo" id="corpse" onkeyup="ValidateCorpse()" required>
-            <span id="CorpAlert" class="alert"></span>
-        </div>
+                <div class = "containerInputs">
+                    <label for="UserName">Cuerpo</label>
+                    <input name="Cuerpo" type="text" placeholder = "Cuerpo del Posteo" id="corpse" onkeyup="ValidateCorpse()" required>
+                    <span id="CorpAlert" class="alert"></span>
+                </div>
 
-        <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
-        <input type="hidden" value=@ViewBag.IdForo name="IdForo">
+                <input type="hidden" value=@ViewBag.User.IdUsuario name="IdUsuario">
+                <input type="hidden" value=@ViewBag.IdForo name="IdForo">
 
-        <div class = "containerInputs">
-            <button class="boton" id="botonCrearUsuario">Crear Posteo</button>
-        </div>
-    <div>
-</form>
+                <div class = "containerInputs">
+                    <button class="boton" id="botonCrearUsuario">Crear Posteo</button>
+                </div>
+            <div>
+        </form>
+    </div>
+</div>

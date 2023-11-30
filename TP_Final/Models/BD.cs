@@ -16,6 +16,18 @@ public class BD
         }
         return user;
     }
+
+    static public Usuario UserUsuario (string idUsuario)
+    {
+        string sql = "exec UserUsuario @IdUsuario";
+        Usuario user;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            user = db.QueryFirstOrDefault<Usuario>(sql,new{IdUsuario = idUsuario});
+        }
+        return user;
+    }
+
     static public Usuario MostrarUsuario(string IdUsuario){
         string sql = "exec MostrarUsuario @idPersona";
         Usuario usuario;
