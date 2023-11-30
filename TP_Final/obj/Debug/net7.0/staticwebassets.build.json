@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SqhutTkHV+FGNpovnHWVP6Ogyvw8rc0ctH04hqMZIbc=",
+  "Hash": "qSIiRVnlxFPEUYE4jiVcx+QBVILsif786C04Ueg5reI=",
   "Source": "TP_Final",
   "BasePath": "_content/TP_Final",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\image-removebg-preview.png"
+    },
+    {
+      "Identity": "C:\\Users\\47961890\\Desktop\\Nueva carpeta\\TP-FInal\\TP_Final\\wwwroot\\img\\Logo.png",
+      "SourceId": "TP_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47961890\\Desktop\\Nueva carpeta\\TP-FInal\\TP_Final\\wwwroot\\",
+      "BasePath": "_content/TP_Final",
+      "RelativePath": "img/Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo.png"
     },
     {
       "Identity": "C:\\Users\\47961890\\Desktop\\Nueva carpeta\\TP-FInal\\TP_Final\\wwwroot\\img\\peron.jpg",

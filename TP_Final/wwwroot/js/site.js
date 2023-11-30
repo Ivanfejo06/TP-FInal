@@ -139,7 +139,7 @@ function ValidateUser()
     }
     if(leng && long){UserAlert.textContent = "";}
 
-    $.ajax({
+    /*$.ajax({
         url: '/Home/UserExists', // Reemplaza con la URL de tu controlador de servidor
         type: 'POST',
         datatype: 'JSON',
@@ -152,7 +152,7 @@ function ValidateUser()
             // Manejar errores de la solicitud Ajax
             $('#UserAlert').text('Error al realizar la solicitud Ajax.');
         }
-    });
+    });*/
 }
 
 function ValidateTitle()

@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class = "navbar">
-        <p>Foto</p>
+        <img src="/img/Logo.png" class="fotito">
         <a href='@Url.Action("Index")'><h1>Aid Together</h1></a>
 
         @if (ViewBag.Validation == true)
@@ -25,14 +25,18 @@
         }
 
     </div>
-
     <div class= "sub-navbar">
-        <a href='@Url.Action("Categoria",new{idCategoria = 1,User = ViewBag.Usuario})'><p>Deportes</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 2,User = ViewBag.Usuario})'><p>Alimentacion</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 3,User = ViewBag.Usuario})'><p>Primeros Auxilios</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 4,User = ViewBag.Usuario})'><p>Enfermedades</p></a>
-        <a href='@Url.Action("Categoria",new{idCategoria = 5,User = ViewBag.Usuario})'><p>Infancia</p></a>
+    @{
+        List<Categorias> ListaCategorias = BD.TraerCategorias();
+        foreach(Categorias item in ListaCategorias) 
+        {
+            <a href='@Url.Action("Categoria",new{idCategoria = item.IdCategoria})'><p>@item.Nombre</p></a>
+        }
+    }
     </div>
+    
+        
+    
 
 
 

@@ -16,6 +16,17 @@ public class BD
         }
         return user;
     }
+
+    static public Usuario UserUsuario (string IdUsuario){
+        string sql = "exec UserUsuario @IdUsuario";
+        Usuario user;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            user = db.QueryFirstOrDefault<Usuario>(sql,new{IdUsuario = IdUsuario});
+        }
+        return user;
+    }
+
     static public Usuario MostrarUsuario(string IdUsuario){
         string sql = "exec MostrarUsuario @idPersona";
         Usuario usuario;
@@ -91,6 +102,15 @@ public class BD
         }
         return C;
     }
+
+        static public List<Categorias> TraerCategorias(){
+        string sql = "SELECT * FROM Categorias";
+        List<Categorias> listaCategorias;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            listaCategorias = db.Query<Categorias>(sql).ToList();
+        }
+        return listaCategorias;
+    }
     
     static public List<Posteos> MostrarPosteos(int IdForo, int cantidad){
         string sql = "exec MostrarPosteos @idForo, @Cantidad";
@@ -116,7 +136,6 @@ public class BD
         }
         return comentarios;
     }
-
 
     //Insertar Informacion
     
