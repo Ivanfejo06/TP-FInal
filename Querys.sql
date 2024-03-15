@@ -77,12 +77,18 @@ declare @masDiez int = @Cantidad + 10
 Select * from ComentarioPosteos where IdPosteo = @idPosteo order by Fecha desc
 end;
 
-/*Insertar informacion*/
-
-Alter procedure InsertarForo @idCategoria int,@Titulo varchar(50),@Descripcion varchar(400),@idUsuario varchar(50)
+Create procedure UserUsuario @IdUsuario varchar(50) 
 as 
 begin
-Insert into Foros values(@idCategoria,@Titulo,@Descripcion,@idUsuario)
+Select * from  Usuario where IdUsuario = @IdUsuario
+end;
+
+/*Insertar informacion*/
+
+Alter procedure InsertarForo @idCategoria int,@titulo varchar(50),@descripcion varchar(400),@idUsuario varchar(50)
+as 
+begin
+Insert into Foro (idCategoria,Titulo,Descripcion,IdUsuario)values(@idCategoria,@titulo,@descripcion,@idUsuario)
 end;
 
 Alter procedure InsertarPosteo @Titulo varchar(200), @Subtitulo varchar(400), @Descripcion varchar(400), @Cuerpo varchar(5000), @IdUsuario varchar(50), @IdForo int
@@ -144,3 +150,4 @@ as
 begin
 delete from Usuario where IdUsuario=@IdUsuario
 end;
+
