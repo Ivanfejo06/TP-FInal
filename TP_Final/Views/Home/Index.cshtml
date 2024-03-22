@@ -4,13 +4,13 @@
 <p class="text-center">@ViewBag.ErrorMessage</p>
 @foreach(Foro f in ViewBag.ListarForos)
 {
-<a href= '@Url.Action("Foro", new {idForo = f.IdForo})'>
-<div class= "conteiner">
-<div class = "card"> 
-<h3>@f.Titulo </h3>
-<img src= "">
-<p>@f.Descripcion</p>
-</div>
-</div>
-</a>
+    <a href= '@Url.Action("Foro", new {idForo = f.IdForo})'>
+        <div class= "conteiner">
+            <div class = "card"> 
+                <h3>@f.Titulo </h3>
+                <img src= "">
+                <p>@f.Descripcion</p>
+            </div>
+        </div>
+    </a>
 }
