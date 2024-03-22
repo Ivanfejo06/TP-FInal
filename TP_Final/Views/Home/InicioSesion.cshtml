@@ -1,20 +1,19 @@
 <div class="centrar">
     <div class="containerConfig"> 
-    <form action= '@Url.Action("TraerUsuario")' method= "get" class="formulario">
-        <div class = "containerInputs">
-            <input type="text"  placeholder="Nombre" name="IdUsuario" >
-        </div>
-
-        <div class = "containerInputs">
-            <input type="password" placeholder="Contraseña" name="Contraseña" >
-        </div>
-
-        <div class = "containerInputs">
-            <button type= "submit "class="boton">Iniciar Sesion</button>
-        </div>
-         <div class = "containerInputs">
-            <a href = '@Url.Action("Registrarse")'>Registrarse</a>
-        </div>
-    </form>
-</div>
+        <form action= '@Url.Action("TraerUsuario")' method= "get" class="formulario">
+            <h3>Iniciar Sesion</h3>
+            <div class = "containerInputs">
+                <input type="text"  placeholder="Usuario" name="IdUsuario" >
+            </div>
+            <div class = "containerInputs">
+                <input type="password" placeholder="Contraseña" name="Contraseña" >
+            </div>
+            <div class = "containerInputs">
+                <button type= "submit "class="boton">Iniciar Sesion</button>
+            </div>
+            <div class = "containerInputs">
+                <a href = '@Url.Action("Registrarse")'>Registrarse</a>
+            </div>
+        </form>
+    </div>
 </div>

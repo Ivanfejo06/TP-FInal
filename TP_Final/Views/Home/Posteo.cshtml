@@ -3,12 +3,14 @@
 <p>@ViewBag.Posteo.Descripcion</p>
 <p>@ViewBag.Posteo.Cuerpo</p>
 
-<form Action= '@Url.Action("InsertComentario")' method= "get">
-    <textarea name="Comentario" type="text" placeholder="Comentar..." rows="3" style="width: 100%;" required></textarea>
-    <input type="hidden" value=@ViewBag.User.IdUsuario name="IdUsuario">
-    <input type="hidden" value=@ViewBag.Posteo.IdPosteo name="IdPosteo">
-    <button id="botonCrearUsuario">Comentar</button>
-</form>
+@if (ViewBag.Usuario != null){
+    <form Action= '@Url.Action("InsertComentario")' method= "get">
+        <textarea name="Comentario" type="text" placeholder="Comentar..." rows="3" style="width: 100%;" required></textarea>
+        <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
+        <input type="hidden" value=@ViewBag.Posteo.IdPosteo name="IdPosteo">
+        <button id="botonCrearUsuario">Comentar</button>
+    </form>
+}
 
 <div class="Comentarios">
     @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
@@ -20,6 +22,9 @@
             <div class= "">
                 <p>@p.Cuerpo</p>
             </div>
+            
+            <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario})'> <img class = "imgPerfil"src ="/img/descarga.png"> </a> 
+            
         </div>
     }
 </div>
