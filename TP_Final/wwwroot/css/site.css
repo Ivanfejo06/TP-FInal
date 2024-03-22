@@ -178,21 +178,24 @@ body {
 }
 
 .Comentario{
-  text-align: center;
-  height: 10%;
+  flex-wrap: wrap;
+  text-align: left;
+  min-height: 10%;
   background-color:#d1efec;
   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-  margin-left: 1%;
   margin-right: 1%;
   margin-top: 1%;
-  padding-left: 5%;
+  padding-left: 1%;
   padding-right: 5%;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .Comentarios{
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 .containerInputs{
   margin-top: 5%;
