@@ -20,6 +20,9 @@
             <div class= "">
                 <p>@p.Cuerpo</p>
             </div>
+            
+            <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario})'> <img class = "imgPerfil"src ="/img/descarga.png"> </a> 
+            
         </div>
     }
 </div>

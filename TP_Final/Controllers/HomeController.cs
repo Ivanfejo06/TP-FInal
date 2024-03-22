@@ -174,13 +174,13 @@ public class HomeController : Controller
         public IActionResult EliminarForo(string IdUsuario,int IdForo)
         {
             BD.EliminarForo(IdUsuario,IdForo);
-            return RedirectToAction ("Foros");
+            return RedirectToAction ("Foro");
         }
 
         public IActionResult EliminarComentario (string IdUsuario,int IdComentario)
         {
             BD.EliminarComentario(IdUsuario,IdComentario);
-            return RedirectToAction ("Posteos");
+            return RedirectToAction ("Posteo");
         }
 
         public IActionResult EliminarUsuario (string IdUsuario)

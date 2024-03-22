@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "opX/2+uDTecBvviA0GIy+RoJeKZW2OOQlM17akGkqlg=",
+  "Hash": "0PRibut5Th5QXBXC9PtmEb9T7tKVrtKMkPloPm9d+/s=",
   "Source": "TP_Final",
   "BasePath": "_content/TP_Final",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Configuracion.png"
     },
     {
+      "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\descarga.png",
+      "SourceId": "TP_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
+      "BasePath": "_content/TP_Final",
+      "RelativePath": "img/descarga.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\descarga.png"
+    },
+    {
       "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\editar-removebg-preview.png",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
@@ -134,23 +151,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\editar-removebg-preview.png"
-    },
-    {
-      "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\image-removebg-preview.png",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
-      "BasePath": "_content/TP_Final",
-      "RelativePath": "img/image-removebg-preview.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\image-removebg-preview.png"
     },
     {
       "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\Logo.png",
