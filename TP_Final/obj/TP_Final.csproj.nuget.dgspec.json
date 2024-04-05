@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\47961890\\TP-FInal\\TP_Final\\TP_Final.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\47961890\\TP-FInal\\TP_Final\\TP_Final.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\TP_Final.csproj",
-        "projectName": "TP_Final",
-        "projectPath": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\TP_Final.csproj",
-        "packagesPath": "C:\\Users\\47961890\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\",
-=======
     "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {}
   },
   "projects": {
@@ -25,17 +12,12 @@
         "projectPath": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
         "packagesPath": "C:\\Users\\47436792\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\47961890\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
           "C:\\Users\\47436792\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

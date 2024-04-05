@@ -15,28 +15,13 @@ public class HomeController : Controller
     }
 
 
-//Mostrar informacion
-
+    //Mostrar informacion
     public IActionResult Index()
     {        
-        ViewBag.Validation = false;
-        /*if(ViewBag.User.Nombre != null)
-        {
-            ViewBag.Validation = true; 
-            ViewBag.ErrorMessage = "";
-        }
-        else{
-            ViewBag.ErrorMessage = "No se pudo inciar sesion";
-        }
-        */
+        Usuario currentUser = TempData["CurrentUser"] as Usuario;
+        ViewBag.Usuario = currentUser;
         ViewBag.ListarForos = BD.MostrarForosPrincipal(9);
         return View();  
-    }
-
-    public IActionResult TraerUsuario(string IdUsuario, string Contraseña)
-    {
-        ViewBag.Usuario = BD.IniciarSesion(IdUsuario,Contraseña);
-        return RedirectToAction("Index");
     }
 
     public IActionResult Foro(int idForo)
@@ -64,11 +49,6 @@ public class HomeController : Controller
         ViewBag.Titulo = BD.TraerTitulo(idCategoria);
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
         return View("Categoria"); 
-    }
-      
-    public IActionResult InicioSesion ()
-    {
-        return View("InicioSesion");
     }
 
     public IActionResult Registrarse()
@@ -117,7 +97,7 @@ public class HomeController : Controller
   public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
         BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
-        return RedirectToAction ("InicioSesion");
+        return RedirectToAction ("InicioSesion","Auth");
     }
 
     public IActionResult InsertComentario (string Comentario,string IdUsuario,int IdPosteo)

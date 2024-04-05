@@ -14,7 +14,7 @@
         <img src="/img/Logo.png" class="fotito">
         <a href='@Url.Action("Index")'><h1>Aid Together</h1></a>
 
-        @if (ViewBag.Validation == true)
+        @if (ViewBag.Usuario != null)
         {
             <a href='@Url.Action("MostrarPerfil")'><img src="/img/image-removebg-preview.png" width="50px"></a>
             ViewBag.Usuario = ViewBag.User;
@@ -22,8 +22,8 @@
         else
         {
             <div>
-                <a href='@Url.Action("InicioSesion")'><button>Iniciar Sesion</button></a>
-                <a href='@Url.Action("Registrarse")'><button>Registrarse</button></a>
+                <a href='@Url.Action("InicioSesion","Auth")'><button class="iniciar">Iniciar Sesion</button></a>
+                <a href='@Url.Action("Registrarse")'><button class="registrarse">Registrarse</button></a>
             </div>
         }
 

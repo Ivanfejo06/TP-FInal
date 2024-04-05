@@ -18,3 +18,36 @@
 .fotito[b-aqvblvg7yk]{
   width: 90px;
 }
+
+/* Estilos para el botón */
+.iniciar[b-aqvblvg7yk] {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambiar color de fondo al pasar */
+.iniciar:hover[b-aqvblvg7yk] {
+  background-color: #0056b3; /* Nuevo color de fondo */
+}
+
+.registrarse[b-aqvblvg7yk] {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambiar color de fondo al pasar */
+.registrarse:hover[b-aqvblvg7yk] {
+  background-color: #0056b3; /* Nuevo color de fondo */
+}

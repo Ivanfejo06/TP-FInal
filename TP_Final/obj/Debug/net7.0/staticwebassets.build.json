@@ -1,14 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "V1PGkwni3h54rcc0MLEhYIwqe72J53ObHwK7igNd+0c=",
-=======
-<<<<<<< HEAD
-  "Hash": "0PRibut5Th5QXBXC9PtmEb9T7tKVrtKMkPloPm9d+/s=",
-=======
-  "Hash": "bpIWkZMHWxHMilalhYrxPlCBRdcNkJ4P5/902ix0+60=",
->>>>>>> 40cd14aea4b975380c5864a43e165d38752b4b5d
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
+  "Hash": "4zSF/cD/vEQauvS/v+zV56RdsyPLw1wpYC24OL3QYjI=",
   "Source": "TP_Final",
   "BasePath": "_content/TP_Final",
   "Mode": "Default",
@@ -18,28 +10,17 @@
     {
       "Name": "TP_Final\\wwwroot",
       "Source": "TP_Final",
-<<<<<<< HEAD
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP_Final.styles.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP_Final.styles.css",
       "SourceId": "TP_Final",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "TP_Final.styles.css",
       "AssetKind": "All",
@@ -50,15 +31,6 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP_Final.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP_Final.bundle.scp.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-=======
       "OriginalItemSpec": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP_Final.styles.css"
     },
     {
@@ -66,7 +38,6 @@
       "SourceId": "TP_Final",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "TP_Final.bundle.scp.css",
       "AssetKind": "All",
@@ -77,15 +48,6 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP_Final.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\css\\site.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "OriginalItemSpec": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP_Final.bundle.scp.css"
     },
     {
@@ -93,7 +55,6 @@
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -107,17 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\favicon.ico",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\favicon.ico",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -131,17 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\comentario-removebg-preview.png",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\comentario-removebg-preview.png",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "img/comentario-removebg-preview.png",
       "AssetKind": "All",
@@ -155,17 +102,10 @@
       "OriginalItemSpec": "wwwroot\\img\\comentario-removebg-preview.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\Configuracion.png",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\Configuracion.png",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "img/Configuracion.png",
       "AssetKind": "All",
@@ -179,15 +119,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Configuracion.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\editar-removebg-preview.png",
-=======
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\descarga.png",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
+      "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\descarga.png",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
       "BasePath": "_content/TP_Final",
       "RelativePath": "img/descarga.png",
       "AssetKind": "All",
@@ -201,10 +136,7 @@
       "OriginalItemSpec": "wwwroot\\img\\descarga.png"
     },
     {
-      "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\editar-removebg-preview.png",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\editar-removebg-preview.png",
->>>>>>> 40cd14aea4b975380c5864a43e165d38752b4b5d
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
@@ -221,45 +153,10 @@
       "OriginalItemSpec": "wwwroot\\img\\editar-removebg-preview.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\image-removebg-preview.png",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47807324\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\Logo.png",
-=======
-      "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\image-removebg-preview.png",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
-      "BasePath": "_content/TP_Final",
-      "RelativePath": "img/image-removebg-preview.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\image-removebg-preview.png"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\Logo.png",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\Logo.png",
->>>>>>> 40cd14aea4b975380c5864a43e165d38752b4b5d
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "img/Logo.png",
       "AssetKind": "All",
@@ -273,17 +170,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Logo.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\peron.jpg",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\peron.jpg",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "img/peron.jpg",
       "AssetKind": "All",
@@ -297,17 +187,10 @@
       "OriginalItemSpec": "wwwroot\\img\\peron.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\img\\Persona.jpg",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\img\\Persona.jpg",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "img/Persona.jpg",
       "AssetKind": "All",
@@ -321,17 +204,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Persona.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\js\\site.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\js\\site.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -345,17 +221,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -369,17 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -393,17 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -417,17 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -441,17 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -465,17 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -489,17 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -513,17 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -537,17 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -561,17 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -585,17 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -609,17 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -633,17 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -657,17 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -681,17 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -705,17 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -729,17 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -753,17 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -777,17 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -801,17 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -825,17 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -849,17 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -873,17 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -897,17 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -921,17 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -945,17 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -969,17 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -993,17 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1017,17 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1041,17 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1065,17 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1089,17 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1113,17 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1137,17 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1161,17 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1185,17 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1209,17 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1233,17 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1257,17 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1281,17 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1305,17 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1329,17 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1353,17 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1377,17 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1401,17 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1425,17 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1449,17 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1473,17 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1497,17 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1521,17 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1545,17 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1569,17 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1593,17 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1617,17 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1641,17 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1665,17 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1689,17 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "TP_Final",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47961890\\TP-FInal\\TP_Final\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TP_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47436792\\Desktop\\TP-FInal\\TP_Final\\wwwroot\\",
->>>>>>> 6e7d912185b92e8af6997bd2952e74a67dd288a9
       "BasePath": "_content/TP_Final",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
