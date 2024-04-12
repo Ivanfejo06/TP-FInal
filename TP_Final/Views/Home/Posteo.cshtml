@@ -22,9 +22,11 @@
             <div class= "">
                 <p>@p.Cuerpo</p>
             </div>
-            
-            <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario})'> <img class = "imgPerfil"src ="/img/descarga.png"> </a> 
-            
+            @if(ViewBag.Usuario != null){
+                if(p.IdUsuario == ViewBag.Usuario.IdUsuario){
+                    <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario})'> <img class = "imgPerfil"src ="/img/descarga.png"> </a> 
+                }
+            }
         </div>
     }
 </div>

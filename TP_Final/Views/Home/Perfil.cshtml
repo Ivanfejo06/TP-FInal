@@ -1,6 +1,10 @@
-<div class= "containerPerfil"> 
-    <img  class="imgFondoPerfil" src= "/img/peron.jpg">
-    <img class = "imgPerfil" src ="/img/Persona.jpg"> 
-    <p>@ViewBag.Usuario.IdUsuario</p>
+<div class= "containerPerfil">
+    <div class="divPerfil">
+        <img  class="imgFondoPerfilInt" src= "/img/peron.jpg">
+        <div class="divPerfil">
+            <img class = "imgPerfil" src ="@ViewBag.Usuario.Foto"> 
+            <p>@ViewBag.Usuario.IdUsuario</p>
+        </div>
+    </div>
     <p class="pDescripcion">@ViewBag.InfoPerfil.Descripcion </p>
 <div>

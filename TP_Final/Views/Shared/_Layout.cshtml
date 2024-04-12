@@ -16,9 +16,10 @@
 
         @if (ViewBag.Usuario != null)
         {
-            <p>@ViewBag.Usuario.IdUsuario</p>
-            <a href='@Url.Action("MostrarPerfil")'><img src="/img/image-removebg-preview.png" width="50px"></a>
-            ViewBag.Usuario = ViewBag.User;
+            <a href='@Url.Action("MostrarPerfil")'>
+                <p>@ViewBag.Usuario.IdUsuario</p>
+                <img src="/img/image-removebg-preview.png" width="50px">
+            </a>
         }
         else
         {
@@ -38,14 +39,8 @@
         }
     }
     </div>
-    
-        
-    
-
-
-
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>

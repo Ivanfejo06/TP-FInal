@@ -19,7 +19,6 @@ public class HomeController : Controller
     //Mostrar informacion
     public IActionResult Index()
     {        
-        Usuario currentUser = TempData["CurrentUser"] as Usuario;
         ViewBag.Usuario = Logged;
         ViewBag.ListarForos = BD.MostrarForosPrincipal(9);
         return View();  
@@ -84,13 +83,14 @@ public class HomeController : Controller
     public IActionResult CrearPosteo(int Id)
     {
         ViewBag.IdForo = Id;
-        ViewBag.User = Logged;
+        ViewBag.Usuario = Logged;
         return View("CrearPosteo");
     }
 
     public IActionResult CrearForo(int Id)
     {
         ViewBag.IdCategoria = BD.TraerTitulo(Id);
+        ViewBag.Usuario = Logged;
         return View("CrearForo");
     }
 
@@ -104,6 +104,7 @@ public class HomeController : Controller
     public IActionResult MostrarConfiguracion (string IdUsuario)
     {
         ViewBag.Usuario = BD.MostrarPerfil(IdUsuario);
+        ViewBag.Usuario = Logged;
         return View("Configuracion");
     }
 
@@ -113,14 +114,9 @@ public class HomeController : Controller
         return View("UpdatearDatos");
     }
 
-    public IActionResult IniciarSesion ( string IdUsuario, string Contraseña)
-    {
-        ViewBag.Usuario= BD.IniciarSesion(IdUsuario,Contraseña);
-        return View("Index");
-    }
-
     //inserts
-  public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
+
+    public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
         BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
         return RedirectToAction ("InicioSesion","Auth");
