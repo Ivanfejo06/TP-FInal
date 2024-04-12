@@ -53,6 +53,7 @@ public class HomeController : Controller
     {
         int Cantidad = 9;
         ViewBag.Foro = BD.TraerForo(idForo);
+        ViewBag.Usuario = Logged;
         ViewBag.ListPosteos = BD.MostrarPosteos(idForo, Cantidad);
         return View ("Foro");
     }
@@ -84,13 +85,14 @@ public class HomeController : Controller
     public IActionResult CrearPosteo(int Id)
     {
         ViewBag.IdForo = Id;
-        ViewBag.User = Logged;
+        ViewBag.Usuario = Logged;
         return View("CrearPosteo");
     }
 
     public IActionResult CrearForo(int Id)
     {
         ViewBag.IdCategoria = BD.TraerTitulo(Id);
+        ViewBag.Usuario = Logged;
         return View("CrearForo");
     }
 
@@ -164,19 +166,25 @@ public class HomeController : Controller
         public IActionResult EliminarForo(string IdUsuario,int IdForo)
         {
             BD.EliminarForo(IdUsuario,IdForo);
-            return RedirectToAction ("Foro");
+            return RedirectToAction ("Foro",new{idForo = IdForo});
         }
 
-        public IActionResult EliminarComentario (string IdUsuario,int IdComentario)
+        public IActionResult EliminarComentario (string IdUsuario,int IdComentario,int IdPosteo)
         {
             BD.EliminarComentario(IdUsuario,IdComentario);
-            return RedirectToAction ("Posteo");
+            return RedirectToAction ("Posteo",new{idPosteo = IdPosteo});
         }
 
         public IActionResult EliminarUsuario (string IdUsuario)
         {
             BD.EliminarUsuario(IdUsuario);
             return RedirectToAction ("Index");
+        }
+
+        public IActionResult EliminarPosteo (string IdUsuario, int IdPosteo)
+        {
+            BD.EliminarPosteo(IdUsuario,IdPosteo);
+            return RedirectToAction("Posteo",new{idPosteo =IdPosteo});
         }
 
 

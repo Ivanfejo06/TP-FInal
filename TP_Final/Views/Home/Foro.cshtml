@@ -19,8 +19,14 @@
             <div class= "Descripcion">
                 <p>@p.Descripcion</p>
             </div>
-        
-            <a href= '@Url.Action("EliminarForo",new{IdUsuario = @p.IdUsuario, IdForo = @p.IdForo})'> <img class = "imgPerfil"src ="/img/descarga.png" width="25 px"></a>
+            @if(ViewBag.Usuario != null)
+            {
+                @if(ViewBag.Usuario.IdUsuario == p.IdUsuario)
+                {
+                     <a href= '@Url.Action("EliminarPosteo",new{IdUsuario = @p.IdUsuario, IdForo = @p.IdForo})'> <img class = "imgPerfil"src ="/img/descarga.png" width="25 px"></a>
+                }
+            }
+           
         </div>
     </a>
 }
