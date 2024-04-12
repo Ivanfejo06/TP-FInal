@@ -7,6 +7,7 @@ namespace TP_Final.Controllers;
 
 public class HomeController : Controller
 {
+    public static Usuario Logged;
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -19,9 +20,33 @@ public class HomeController : Controller
     public IActionResult Index()
     {        
         Usuario currentUser = TempData["CurrentUser"] as Usuario;
-        ViewBag.Usuario = currentUser;
+        ViewBag.Usuario = Logged;
         ViewBag.ListarForos = BD.MostrarForosPrincipal(9);
         return View();  
+    }
+
+    public IActionResult InicioSesion()
+    {
+        if (Logged != null)
+        {
+            return RedirectToAction("Index");
+        }
+        return View("InicioSesion");
+    }
+
+     public IActionResult VerificarLogin(string IdUsuario, string Contraseña)
+    {
+        if (BD.IniciarSesion(IdUsuario,Contraseña) != null)
+        {
+            Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
+            Logged = user;
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            ViewBag.Error = "Datos de inicio de sesion incorrectos.";
+            return View("InicioSesion");
+        }
     }
 
     public IActionResult Foro(int idForo)
@@ -35,17 +60,17 @@ public class HomeController : Controller
     public IActionResult Posteo(int idPosteo)
     {
         int Cantidad = 9;
-        ViewBag.Usuario = User;
+        ViewBag.Usuario = Logged;
         ViewBag.Posteo = BD.TraerPosteo(idPosteo);
         ViewBag.ListComentarios = BD.MostrarComentariosASC(idPosteo, Cantidad);
         return View ("Posteo");
     }
     
 
-    public IActionResult Categoria (int idCategoria, Usuario User)
+    public IActionResult Categoria (int idCategoria)
     {
         int Cantidad = 10;
-        ViewBag.Usuario = User;
+        ViewBag.Usuario = Logged;
         ViewBag.Titulo = BD.TraerTitulo(idCategoria);
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
         return View("Categoria"); 
@@ -59,7 +84,7 @@ public class HomeController : Controller
     public IActionResult CrearPosteo(int Id)
     {
         ViewBag.IdForo = Id;
-        ViewBag.User = BD.UserUsuario("adm");
+        ViewBag.User = Logged;
         return View("CrearPosteo");
     }
 
@@ -71,7 +96,8 @@ public class HomeController : Controller
 
     public IActionResult MostrarPerfil(string IdUsuario)
     {
-        ViewBag.InfoPerfil = BD.MostrarPerfil(IdUsuario);
+        ViewBag.InfoPerfil = BD.MostrarPerfil(Logged.IdUsuario);
+        ViewBag.Usuario = Logged;
         return View("Perfil");
     }
 

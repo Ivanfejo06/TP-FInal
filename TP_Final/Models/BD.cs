@@ -22,19 +22,11 @@ public class BD
         Usuario user;
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            user = db.QueryFirstOrDefault<Usuario>(sql,new{IdUsuario = IdUsuario});
+            user = db.QueryFirstOrDefault<Usuario>(sql, new{IdUsuario = IdUsuario});
         }
         return user;
     }
 
-    static public Usuario MostrarUsuario(string IdUsuario){
-        string sql = "exec MostrarUsuario @idPersona";
-        Usuario usuario;
-        using(SqlConnection db = new SqlConnection(_connectionString)){
-            usuario = db.QueryFirstOrDefault<Usuario>(sql, new{idPersona = IdUsuario});
-        } 
-        return usuario;
-    }
     static public Perfiles MostrarPerfil(string IdUsuario){
         string sql = "exec MostrarPerfil @idPersona";
         Perfiles perfil;

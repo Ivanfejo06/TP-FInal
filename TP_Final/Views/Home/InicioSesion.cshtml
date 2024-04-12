@@ -1,6 +1,6 @@
 <div class="centrar">
     <div class="containerConfig"> 
-        <form action= '@Url.Action("TraerUsuario")' method= "get" class="formulario">
+        <form action= '@Url.Action("VerificarLogin")' method= "get" class="formulario">
             <h3>Iniciar Sesion</h3>
             <div class = "containerInputs">
                 <input type="text"  placeholder="Usuario" name="IdUsuario" >
@@ -15,5 +15,6 @@
                 <a href = '@Url.Action("Registrarse")'>Registrarse</a>
             </div>
         </form>
+        <p>@ViewBag.Error</p>
     </div>
 </div>
