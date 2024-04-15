@@ -15,6 +15,7 @@ html {
 }
 body {
   margin-bottom: 60px;
+  background-color: #fcfcfc;
 }
 .conteiner
 {
@@ -48,12 +49,14 @@ body {
   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
   text-align: center;
 }
-.containerPerfil .imgFondoPerfil
+.FondoPerfil
 {
   width: 100%;
-  height: 30%;
-  max-height: 100px;
-  display: flex;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  display: block;
+  overflow: hidden; /* Oculta el exceso de la imagen */
 }
 .containerPerfil .imgPerfil
 {
@@ -75,15 +78,24 @@ body {
 {
   flex-wrap: wrap;
 }
+.cardc{
+  width: 30%;
+}
 .CardCategoria
 {
-  width: 30%;
-    overflow: hidden;
-    float: left;
-    margin: 20px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-    text-align: center;
-    cursor: pointer;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+.CardCategoria:hover{
+  background-color: #c4c4c4;
+}
+a{
+  text-decoration: none;
 }
 .containerConfig
 {
@@ -129,13 +141,21 @@ body {
 .boton
 {
   width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 15px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
 }
-
+.boton:hover {
+  background-color: #0056b3; /* Nuevo color de fondo */
+}
 .Posteo
 {
+  background-color: d1efec;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -202,8 +222,17 @@ a{
   display: flex;
 }
 .divPerfilInt{
-  
-}
-.divPerdil{
   display: flex;
+}
+.desc{
+  width: 86%;
+  display: flex;
+  justify-content: center;
+}
+.descr{
+  width: 80%;
+  text-align: center;
+}
+.with{
+  width: 100%;
 }

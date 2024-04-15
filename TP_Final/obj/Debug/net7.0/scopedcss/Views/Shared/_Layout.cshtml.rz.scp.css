@@ -1,4 +1,4 @@
-﻿.navbar
+.navbar[b-aqvblvg7yk]
 {
   width: 100%;
   height: 100px;
@@ -6,7 +6,7 @@
   display: flex;
 }
 
-.sub-navbar
+.sub-navbar[b-aqvblvg7yk]
 {
   width: 100%;
   height: 50px;
@@ -14,12 +14,12 @@
   display: flex;
   justify-content: space-around;
 }
-.fotito{
+.fotito[b-aqvblvg7yk]{
   width: 90px;
 }
 
 /* Estilos para el botón */
-.iniciar {
+.iniciar[b-aqvblvg7yk] {
   background-color: #f1f5fa; /* Color de fondo del botón */
   color: rgb(0, 0, 0); /* Color del texto */
   border: none; /* Sin borde */
@@ -31,11 +31,11 @@
 }
 
 /* Cambiar color de fondo al pasar */
-.iniciar:hover {
+.iniciar:hover[b-aqvblvg7yk] {
   background-color: #d9dee4; /* Nuevo color de fondo */
 }
 
-.registrarse {
+.registrarse[b-aqvblvg7yk] {
   background-color: #007bff; /* Color de fondo del botón */
   color: white; /* Color del texto */
   border: none; /* Sin borde */
@@ -47,48 +47,48 @@
 }
 
 /* Cambiar color de fondo al pasar */
-.registrarse:hover {
+.registrarse:hover[b-aqvblvg7yk] {
   background-color: #0056b3; /* Nuevo color de fondo */
 }
 
-.barra{
+.barra[b-aqvblvg7yk]{
   height: 5px;
   width: auto;
   background-color: white;
 }
 
-.titulo{
+.titulo[b-aqvblvg7yk]{
   color: rgb(255, 255, 255);
 }
 
-.idusuario{
+.idusuario[b-aqvblvg7yk]{
   color: #6bc1b1;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 10px;
 }
 
-.space{
+.space[b-aqvblvg7yk]{
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.third{
+.third[b-aqvblvg7yk]{
   display: flex;
   width: 33.33%;
   justify-content: center;
 }
-.perfil{
+.perfil[b-aqvblvg7yk]{
   display: flex;
   background-color: #ffffff;
   padding: 5px;
   border-radius: 15px;
   transition: background-color 0.3s ease;
 }
-.perfil:hover{
-  background-color: #e0e0e0;
+.perfil:hover[b-aqvblvg7yk]{
+  background-color: #cccccc;
 }
-.pfp{
+.pfp[b-aqvblvg7yk]{
   border-radius: 15px;
 }
