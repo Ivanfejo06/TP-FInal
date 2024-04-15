@@ -70,9 +70,6 @@
 
 .space[b-aqvblvg7yk]{
   margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 .third[b-aqvblvg7yk]{
   display: flex;
@@ -87,7 +84,7 @@
   transition: background-color 0.3s ease;
 }
 .perfil:hover[b-aqvblvg7yk]{
-  background-color: #cccccc;
+  background-color: #e0e0e0;
 }
 .pfp[b-aqvblvg7yk]{
   border-radius: 15px;

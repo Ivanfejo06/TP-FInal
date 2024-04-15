@@ -72,6 +72,7 @@ public class HomeController : Controller
         int Cantidad = 10;
         ViewBag.Usuario = Logged;
         ViewBag.Titulo = BD.TraerTitulo(idCategoria);
+        ViewBag.Categoria = idCategoria;
         ViewBag.ListForosXcategoria = BD.MostrarForos(idCategoria, Cantidad);
         return View("Categoria"); 
     }
@@ -158,10 +159,10 @@ public class HomeController : Controller
 
     //deletes
 
-        public IActionResult EliminarForo(string IdUsuario,int IdForo)
+        public IActionResult EliminarForo(string IdUsuario, int IdForo, int IdCategoria)
         {
             BD.EliminarForo(IdUsuario,IdForo);
-            return RedirectToAction ("Foro",new{idForo = IdForo});
+            return RedirectToAction ("Categoria",new{idCategoria = IdCategoria});
         }
 
         public IActionResult EliminarComentario (string IdUsuario,int IdComentario,int IdPosteo)
@@ -176,10 +177,10 @@ public class HomeController : Controller
             return RedirectToAction ("Index");
         }
 
-        public IActionResult EliminarPosteo (string IdUsuario, int IdPosteo)
+        public IActionResult EliminarPosteo (string IdUsuario, int IdPosteo, int IdForo)
         {
             BD.EliminarPosteo(IdUsuario,IdPosteo);
-            return RedirectToAction("Posteo",new{idPosteo =IdPosteo});
+            return RedirectToAction("Foro",new{idForo = IdForo});
         }
 
 

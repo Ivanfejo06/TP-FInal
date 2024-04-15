@@ -1,13 +1,24 @@
+<div class="informacion">
+    <h6>Escrito por <b>@ViewBag.Foro.IdUsuario</b></h6>
+    @if(ViewBag.Usuario != null)
+    {
+        if(ViewBag.Usuario.IdUsuario == ViewBag.Foro.IdUsuario)
+        {
+            <button class="botonB" href='@Url.Action("EliminarForo", new { IdUsuario = ViewBag.Foro.IdUsuario, IdForo = ViewBag.Foro.IdForo, IdCategoria = ViewBag.Foro.IdCategoria })'>
+                <p>Eliminar Foro</p>
+            </button>
+        }
+    }
+</div>
+
+
 <h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
 <p>@ViewBag.Foro.Descripcion</p>
 
 @if(ViewBag.Usuario != null)
 {
- <button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo})'>Crear Posteo</a></button>
+    <button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo})'>Crear Posteo</a></button>
 }
-
-
-
 @foreach(Posteos p in  ViewBag.ListPosteos)
 {
     <a href='@Url.Action("Posteo",new{idPosteo = p.IdPosteo})'>
@@ -23,10 +34,9 @@
             {
                 if(ViewBag.Usuario.IdUsuario == p.IdUsuario)
                 {
-                     <a href= '@Url.Action("EliminarPosteo",new{IdUsuario = @p.IdUsuario, IdForo = @p.IdForo})'> <img class = "imgPerfil"src ="/img/descarga.png" width="25 px"></a>
+                    <a href= '@Url.Action("EliminarPosteo",new{IdUsuario = @p.IdUsuario, IdPosteo = @p.IdPosteo, IdForo = @p.IdForo,})'> <img class = "imgPerfil"src ="/img/descarga.png" width="25 px"></a>
                 }
             }
-           
         </div>
     </a>
 }

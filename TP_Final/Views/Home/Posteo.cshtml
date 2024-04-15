@@ -1,3 +1,16 @@
+<div class="informacion">
+    <h6>Escrito por <b>@ViewBag.Posteo.IdUsuario</b></h6>
+    @if(ViewBag.Usuario != null)
+    {
+        if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
+        {
+            <button class="botonB" href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'>
+                <p>Eliminar Posteo</p>
+            </button>
+        }
+    }
+</div>
+
 <h3 class = "TituloCategoria">@ViewBag.Posteo.Titulo</h3>
 <h6 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h6>
 <p>@ViewBag.Posteo.Descripcion</p>
@@ -16,19 +29,19 @@
     @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
     {
         <div class = "Comentario">
-            <div class= ""> 
+            <div class= "informacionC"> 
                 <h5>@p.IdUsuario</h5>
+                @if(ViewBag.Usuario != null)
+                {
+                    if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
+                    {
+                        <button class="botonB" href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'>Eliminar Comentario</button> 
+                    }
+                }
             </div>
             <div class= "">
                 <p>@p.Cuerpo</p>
             </div>
-            @if(ViewBag.Usuario.IdUsuario != null)
-            {
-                if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
-            {
-                <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> <img class = "imgPerfil"src ="/img/descarga.png"> </a> 
-            }
-            }
         </div>
     }
 </div>
