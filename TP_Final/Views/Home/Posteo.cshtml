@@ -4,8 +4,8 @@
     {
         if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
         {
-            <button class="botonB" href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'>
-                <p>Eliminar Posteo</p>
+            <button class="botonB" >
+               <a href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'> <p>Eliminar Posteo</p> </a> 
             </button>
         }
     }
@@ -35,7 +35,7 @@
                 {
                     if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
                     {
-                        <button class="botonB" href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'>Eliminar Comentario</button> 
+                        <button class="botonB"> <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> Eliminar Comentario </a> </button> 
                     }
                 }
             </div>
