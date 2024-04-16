@@ -190,6 +190,11 @@ public class HomeController : Controller
         return BD.UsuarioExists(IdUsuario);
     }
 
+    public IActionResult Logout()
+    {
+        Logged = null;
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
