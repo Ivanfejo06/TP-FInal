@@ -23,7 +23,7 @@
         <section class="third">
             @if (ViewBag.Usuario != null)
             {
-                <a class="perfil" href='@Url.Action("MostrarPerfil")'>
+                <a class="perfil" href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Usuario.IdUsuario})'>
                     <h5 class="idusuario">@ViewBag.Usuario.IdUsuario</h5>
                     <img class="pfp" src="@ViewBag.Usuario.Foto" width="50px">
                 </a>

@@ -98,7 +98,8 @@ public class HomeController : Controller
 
     public IActionResult MostrarPerfil(string IdUsuario)
     {
-        ViewBag.InfoPerfil = BD.MostrarPerfil(Logged.IdUsuario);
+        ViewBag.InfoPerfil = BD.MostrarPerfil(IdUsuario);
+        ViewBag.Perfil = BD.UserUsuario(IdUsuario);
         ViewBag.Usuario = Logged;
         return View("Perfil");
     }

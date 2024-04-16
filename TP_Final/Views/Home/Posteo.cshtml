@@ -1,5 +1,5 @@
 <div class="informacion">
-    <h6>Escrito por <b>@ViewBag.Posteo.IdUsuario</b></h6>
+    <h6>Escrito por <a href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Posteo.IdUsuario})'><b>@ViewBag.Posteo.IdUsuario</b></a></h6>
     @if(ViewBag.Usuario != null)
     {
         if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
