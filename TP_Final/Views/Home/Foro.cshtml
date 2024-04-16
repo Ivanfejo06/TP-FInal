@@ -4,8 +4,8 @@
     {
         if(ViewBag.Usuario.IdUsuario == ViewBag.Foro.IdUsuario)
         {
-            <button class="botonB" href='@Url.Action("EliminarForo", new { IdUsuario = ViewBag.Foro.IdUsuario, IdForo = ViewBag.Foro.IdForo, IdCategoria = ViewBag.Foro.IdCategoria })'>
-                <p>Eliminar Foro</p>
+            <button class="botonB" >
+               <a href='@Url.Action("EliminarForo", new { IdUsuario = ViewBag.Foro.IdUsuario, IdForo = ViewBag.Foro.IdForo, IdCategoria = ViewBag.Foro.IdCategoria })'> <p>Eliminar Foro</p> </a>
             </button>
         }
     }
