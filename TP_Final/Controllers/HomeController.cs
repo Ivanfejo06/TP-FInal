@@ -193,6 +193,7 @@ public class HomeController : Controller
     public IActionResult Logout()
     {
         Logged = null;
+        return RedirectToAction("Index");
     }
 
 
