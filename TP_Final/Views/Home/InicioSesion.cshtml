@@ -1,11 +1,12 @@
 <div class="centrar">
     <div class="containerConfig"> 
         <form action='@Url.Action("VerificarLogin")' method="get" class="formulario">
-            <h3 class="titulo">Iniciar Sesión</h3>
+            <h3>Iniciar Sesión</h3>
             <input type="text" placeholder="Usuario" name="IdUsuario">
             <input type="password" placeholder="Contraseña" name="Contraseña">
-            <button type="submit" class="boton">Iniciar Sesión</button>
+            <button type="submit">Iniciar Sesión</button>
+            <p class="error">@ViewBag.Error</p>
+            <a href='@Url.Action("Registrarse")' class="NoAccount">¿No tenes cuenta?</a>
         </form>
-        <p>@ViewBag.Error</p>
     </div>
 </div>

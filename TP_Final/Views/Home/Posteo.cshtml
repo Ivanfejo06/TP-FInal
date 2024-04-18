@@ -1,47 +1,48 @@
-<div class="informacion">
-    <h6>Escrito por <a href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Posteo.IdUsuario})'><b>@ViewBag.Posteo.IdUsuario</b></a></h6>
-    @if(ViewBag.Usuario != null)
-    {
-        if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
+<div class="recuadro">
+    <div class="informacion">
+        <h6>Escrito por <a href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Posteo.IdUsuario})'><b>@ViewBag.Posteo.IdUsuario</b></a></h6>
+        @if(ViewBag.Usuario != null)
         {
-            <button class="botonB" >
-               <a href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'> <p>Eliminar Posteo</p> </a> 
-            </button>
+            if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
+            {
+                <button class="botonB" >
+                <a href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'> <p>Eliminar Posteo</p> </a> 
+                </button>
+            }
         }
+    </div>
+
+    <h3 class = "TituloCategoria">@ViewBag.Posteo.Titulo</h3>
+    <h6 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h6>
+    <p>@ViewBag.Posteo.Descripcion</p>
+    <p>@ViewBag.Posteo.Cuerpo</p>
+
+    @if (ViewBag.Usuario != null){
+        <form Action= '@Url.Action("InsertComentario")' method= "get">
+            <textarea name="Comentario" type="text" placeholder="Comentar..." rows="3" style="width: 100%;" required></textarea>
+            <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
+            <input type="hidden" value=@ViewBag.Posteo.IdPosteo name="IdPosteo">
+            <button id="botonCrearUsuario" class="boton">Comentar</button>
+        </form>
     }
-</div>
-
-<h3 class = "TituloCategoria">@ViewBag.Posteo.Titulo</h3>
-<h6 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h6>
-<p>@ViewBag.Posteo.Descripcion</p>
-<p>@ViewBag.Posteo.Cuerpo</p>
-
-@if (ViewBag.Usuario != null){
-    <form Action= '@Url.Action("InsertComentario")' method= "get">
-        <textarea name="Comentario" type="text" placeholder="Comentar..." rows="3" style="width: 100%;" required></textarea>
-        <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
-        <input type="hidden" value=@ViewBag.Posteo.IdPosteo name="IdPosteo">
-        <button id="botonCrearUsuario">Comentar</button>
-    </form>
-}
-
-<div class="Comentarios">
-    @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
-    {
-        <div class = "Comentario">
-            <div class= "informacionC"> 
-                <h5>@p.IdUsuario</h5>
-                @if(ViewBag.Usuario != null)
-                {
-                    if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
+    <div class="Comentarios">
+        @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
+        {
+            <div class = "Comentario">
+                <div class= "informacionC"> 
+                    <h5>@p.IdUsuario</h5>
+                    @if(ViewBag.Usuario != null)
                     {
-                        <button class="botonB"> <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> Eliminar Comentario </a> </button> 
+                        if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
+                        {
+                            <button class="botonB"> <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> Eliminar Comentario </a> </button> 
+                        }
                     }
-                }
+                </div>
+                <div class= "">
+                    <p>@p.Cuerpo</p>
+                </div>
             </div>
-            <div class= "">
-                <p>@p.Cuerpo</p>
-            </div>
-        </div>
-    }
+        }
+    </div>
 </div>

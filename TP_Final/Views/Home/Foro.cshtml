@@ -1,42 +1,44 @@
-<div class="informacion">
-    <h6>Escrito por <a href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Foro.IdUsuario})'><b>@ViewBag.Foro.IdUsuario</b></a></h6>
+<div class="recuadro">
+    <div class="informacion">
+        <h6>Escrito por <a href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Foro.IdUsuario})'><b>@ViewBag.Foro.IdUsuario</b></a></h6>
+        @if(ViewBag.Usuario != null)
+        {
+            if(ViewBag.Usuario.IdUsuario == ViewBag.Foro.IdUsuario)
+            {
+                <button class="botonB" >
+                <a href='@Url.Action("EliminarForo", new { IdUsuario = ViewBag.Foro.IdUsuario, IdForo = ViewBag.Foro.IdForo, IdCategoria = ViewBag.Foro.IdCategoria })'> <p>Eliminar Foro</p> </a>
+                </button>
+            }
+        }
+    </div>
+
+
+    <h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
+    <p>@ViewBag.Foro.Descripcion</p>
+
     @if(ViewBag.Usuario != null)
     {
-        if(ViewBag.Usuario.IdUsuario == ViewBag.Foro.IdUsuario)
-        {
-            <button class="botonB" >
-               <a href='@Url.Action("EliminarForo", new { IdUsuario = ViewBag.Foro.IdUsuario, IdForo = ViewBag.Foro.IdForo, IdCategoria = ViewBag.Foro.IdCategoria })'> <p>Eliminar Foro</p> </a>
-            </button>
-        }
+        <button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo})'>Crear Posteo</a></button>
+    }
+    @foreach(Posteos p in  ViewBag.ListPosteos)
+    {
+        <a href='@Url.Action("Posteo",new{idPosteo = p.IdPosteo})'>
+            <div class = "Posteo">
+                <div class= "TopBar"> 
+                    <h5>@p.Titulo</h5>
+                </div>
+                
+                <div class= "Descripcion">
+                    <p>@p.Descripcion</p>
+                </div>
+                @if(ViewBag.Usuario != null)
+                {
+                    if(ViewBag.Usuario.IdUsuario == p.IdUsuario)
+                    {
+                        <a href= '@Url.Action("EliminarPosteo",new{IdUsuario = @p.IdUsuario, IdPosteo = @p.IdPosteo, IdForo = @p.IdForo,})'> <img class = "imgPerfil"src ="/img/descarga.png" width="25 px"></a>
+                    }
+                }
+            </div>
+        </a>
     }
 </div>
-
-
-<h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
-<p>@ViewBag.Foro.Descripcion</p>
-
-@if(ViewBag.Usuario != null)
-{
-    <button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo})'>Crear Posteo</a></button>
-}
-@foreach(Posteos p in  ViewBag.ListPosteos)
-{
-    <a href='@Url.Action("Posteo",new{idPosteo = p.IdPosteo})'>
-        <div class = "Posteo">
-            <div class= "TopBar"> 
-                <h5>@p.Titulo</h5>
-            </div>
-            
-            <div class= "Descripcion">
-                <p>@p.Descripcion</p>
-            </div>
-            @if(ViewBag.Usuario != null)
-            {
-                if(ViewBag.Usuario.IdUsuario == p.IdUsuario)
-                {
-                    <a href= '@Url.Action("EliminarPosteo",new{IdUsuario = @p.IdUsuario, IdPosteo = @p.IdPosteo, IdForo = @p.IdForo,})'> <img class = "imgPerfil"src ="/img/descarga.png" width="25 px"></a>
-                }
-            }
-        </div>
-    </a>
-}

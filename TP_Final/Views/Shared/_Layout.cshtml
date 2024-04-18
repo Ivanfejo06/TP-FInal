@@ -42,7 +42,7 @@
         List<Categorias> ListaCategorias = BD.TraerCategorias();
         foreach(Categorias item in ListaCategorias) 
         {
-            <a href='@Url.Action("Categoria",new{idCategoria = item.IdCategoria})'><p>@item.Nombre</p></a>
+            <a href='@Url.Action("Categoria",new{idCategoria = item.IdCategoria})' class="categoria"><h4>@item.Nombre</h4></a>
         }
     }
     </div>

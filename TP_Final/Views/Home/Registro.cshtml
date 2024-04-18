@@ -1,42 +1,22 @@
 <div class="centrar">
     <div class="containerConfig">   
-        <form Action= '@Url.Action("CargarUsuario")' method= "get">
+        <form Action= '@Url.Action("CargarUsuario")' method= "get" class="formulario">
             <div class="text-center">
-                <h4>Registrarse </h4>
-                <div class = "containerInputs">
-                    <label for="UserName">IdUsuario</label>
-                    <input name="IdUsuario" type="text" placeholder = "Nombre de Usuario" id="user" onchange="ValidateUser()" required>
-                    <span id="UserAlert" class="alert"></span>
-                </div>
-                <div class = "containerInputs">
-                    <label for="UserName">Contraseña</label>
-                    <input type="password" value="" name="Contraseña" placeholder="Contraseña" id="c1" onkeyup="ValidatePassword()" required>
-                    <span id="PasswordAlert" class="alert"></span>
-                </div>
-                <div class = "containerInputs">
-                    <label for="UserName">Repetir contraseña</label>
-                    <input type="password" value="" placeholder="Repetir Contraseña" id="c2" onkeyup="ValidateRepeat()" required>
-                    <span id="RepeatAlert" class="alert"></span>
-                </div>
-                <div class = "containerInputs">
-                    <label for="UserName">Correo</label>
-                    <input type="email" value="" name="Correo" placeholder="Correo@correo.correo" id="mail" onkeyup="ValidateEmail()" required>
-                    <span id="MailAlert" class="alert"></span>
-                </div>
-                <div class = "containerInputs">
-                    <input name="Nombre" type="text" placeholder= "Nombre" id="name" onkeyup="ValidateName()" required>
-                    <span id="NameAlert" class="alert"></span>
-                </div>
-                <div class = "containerInputs">
-                    <input name="Apellido" type="text" placeholder= "Apellido" id="a" onkeyup="ValidateApellido()" required>
-                    <span id="ApellidoAlert" class="alert"></span>
-                </div>
-                <div class = "containerInputs">
-                    <input name="Foto" type="image" placeholder= "Foto" value="NULL">
-                </div>
-                <div class = "containerInputs">
-                <button class="boton" id="botonCrearUsuario" >Crear Usuario</button>
-                </div>
+                <h3>Registrarse</h3>
+                <input name="IdUsuario" type="text" placeholder = "Nombre de Usuario" id="user" onchange="ValidateUser()" required>
+                <span id="UserAlert" class="alert"></span>
+                <input type="password" value="" name="Contraseña" placeholder="Contraseña" id="c1" onkeyup="ValidatePassword()" required>
+                <span id="PasswordAlert" class="alert"></span>
+                <input type="password" value="" placeholder="Repetir Contraseña" id="c2" onkeyup="ValidateRepeat()" required>
+                <span id="RepeatAlert" class="alert"></span>
+                <input type="email" value="" name="Correo" placeholder="Correo@correo.correo" id="mail" onkeyup="ValidateEmail()" required>
+                <span id="MailAlert" class="alert"></span>
+                <input name="Nombre" type="text" placeholder= "Nombre" id="name" onkeyup="ValidateName()" required>
+                <span id="NameAlert" class="alert"></span>
+                <input name="Apellido" type="text" placeholder= "Apellido" id="a" onkeyup="ValidateApellido()" required>
+                <span id="ApellidoAlert" class="alert"></span>
+                <input name="Foto" type="image" placeholder= "Foto" value="NULL">
+                <button id="botonCrearUsuario" >Crear Usuario</button>
             <div>
         </form>
     </div>
