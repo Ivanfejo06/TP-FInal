@@ -2,19 +2,14 @@
     <form Action='@Url.Action("InsertPosteo")' method= "get" class="formulario">
         <div>
             <h4>Crear posteo para @ViewBag.Foro.Titulo</h4>
-
-                <input name="Titulo" type="text" placeholder = "Titulo del posteo" id="titulo" onkeyup="ValidateTitlePosteos()" required>
-                <span id="TitleAlert" class="alert"></span>
-
-                <input name="Subtitulo" type="text" placeholder = "Subtitulo" id="subtitle" onkeyup="ValidateSubtitle()" required>
-                <span id="SubAlert" class="alert"></span>
-
-                <textarea name="Descripcion" type="text" placeholder="Comentar..." rows="2" style="width: 100%;" id="Desc" onkeyup="ValidateDesc()" required></textarea>
-                <span id="DescAlert" class="alert"></span>
-
-                <textarea name="Cuerpo" type="text" placeholder="Cuerpo del posteo" rows="3" style="width: 100%;" id="corpse" onkeyup="ValidateCorpse()" required></textarea>
-                <span id="CorpAlert" class="alert"></span>
-
+            <input name="Titulo" type="text" placeholder = "Titulo del posteo" id="titulo" onkeyup="ValidateTitlePosteos()" required>
+            <span id="TitleAlert" class="alert"></span>
+            <input name="Subtitulo" type="text" placeholder = "Subtitulo" id="subtitle" onkeyup="ValidateSubtitle()" required>
+            <span id="SubAlert" class="alert"></span>
+            <textarea name="Descripcion" type="text" placeholder="Comentar..." rows="2" style="width: 100%;" id="Desc" onkeyup="ValidateDesc()" required></textarea>
+            <span id="DescAlert" class="alert"></span>
+            <textarea name="Cuerpo" type="text" placeholder="Cuerpo del posteo" rows="3" style="width: 100%;" id="corpse" onkeyup="ValidateCorpse()" required></textarea>
+            <span id="CorpAlert" class="alert"></span>
             <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
             <input type="hidden" value=@ViewBag.Foro.IdForo name="IdForo">
             <button type="submit" id="botonCrearUsuario">Crear Posteo</button>

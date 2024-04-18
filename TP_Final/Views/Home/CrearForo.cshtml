@@ -1,25 +1,12 @@
-<div class=formu>
-    <div class="containerConfig">
-        <form Action= '@Url.Action("InsertForo")' method= "get">
-            <h4>Crear foro para @ViewBag.IdCategoria.Nombre</h4>
-
-            <input type="hidden" name="IdCategoria" value=@ViewBag.IdCategoria.IdCategoria>
-
-            <div class = "containerInputs">
-                <label for="UserName">Titulo</label>
-                <input name="Titulo" type="text" placeholder = "Titulo del foro" id="titulo" onkeyup="ValidateTitle()" required>
-                <span id="TitleAlert" class="alert"></span>
-            </div>
-            <div class = "containerInputs">
-                <label for="UserName">Descripcion</label>
-                <input type="text" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidateDesc()" required>
-                <span id="DescAlert" class="alert"></span>
-            </div>
-            <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
-
-            <div class = "containerInputs">
-                <button class="boton" id="botonCrearUsuario">Crear Foro</button>
-            </div>
-        </form>
-    </div>
+<div class="containerConfig">
+    <form Action= '@Url.Action("InsertForo")' method= "get" class="formulario">
+        <h4>Crear foro para @ViewBag.IdCategoria.Nombre</h4>
+        <input type="hidden" name="IdCategoria" value=@ViewBag.IdCategoria.IdCategoria>
+        <input name="Titulo" type="text" placeholder = "Titulo del foro" id="titulo" onkeyup="ValidateTitle()" required>
+        <span id="TitleAlert" class="alert"></span>
+        <input type="text" value="" name="Descripcion" placeholder="Descripcion" id="Desc" onkeyup="ValidateDesc()" required>
+        <span id="DescAlert" class="alert"></span>
+        <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
+        <button id="botonCrearUsuario">Crear Foro</button>
+    </form>
 </div>
