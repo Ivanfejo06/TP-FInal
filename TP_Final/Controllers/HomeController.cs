@@ -84,7 +84,7 @@ public class HomeController : Controller
 
     public IActionResult CrearPosteo(int Id)
     {
-        ViewBag.IdForo = Id;
+        ViewBag.Foro = BD.TraerForo(Id);
         ViewBag.Usuario = Logged;
         return View("CrearPosteo");
     }
