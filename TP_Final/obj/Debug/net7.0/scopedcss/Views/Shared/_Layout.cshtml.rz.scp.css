@@ -102,3 +102,9 @@
 .pfp[b-aqvblvg7yk]{
   border-radius: 15px;
 }
+
+.footer[b-aqvblvg7yk]{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

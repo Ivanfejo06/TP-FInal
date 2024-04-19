@@ -6,7 +6,7 @@
             if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
             {
                 <button class="botonB" >
-                <a href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'> <p>Eliminar Posteo</p> </a> 
+                    <a href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'> <p>Eliminar Posteo</p> </a> 
                 </button>
             }
         }

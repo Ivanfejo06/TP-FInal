@@ -54,6 +54,13 @@ public class HomeController : Controller
         return View ("Foro");
     }
 
+    public IActionResult Creditos(){
+        ViewBag.Pala = BD.UserUsuario("Ivanfejo");
+        ViewBag.Ivo = BD.UserUsuario("Pala");
+        ViewBag.Marcos = BD.UserUsuario("Macaquiri");
+        return View ("Creditos");
+    }
+
     public IActionResult Posteo(int idPosteo)
     {
         int Cantidad = 9;

@@ -291,3 +291,12 @@ a{
   border-radius: 20Px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.justify{
+  display: flex;
+  justify-content: space-around;
+}
+.border{
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}

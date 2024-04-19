@@ -1,0 +1,21 @@
+<h3 class = "TituloCategoria">Creditos</h3>
+<div class="justify">
+    <a href='@Url.Action("MostrarPerfil", new{IdUsuario = @ViewBag.Pala.IdUsuario})'>
+        <div class= "CardCategoria">
+            <img class="border" src="@ViewBag.Pala.Foto">
+            <p>@ViewBag.Pala.Nombre @ViewBag.Pala.Apellido</p>
+        </div>
+    </a>
+    <a href='@Url.Action("MostrarPerfil", new{IdUsuario = @ViewBag.Ivo.IdUsuario})'>
+        <div class= "CardCategoria">
+            <img class="border" src="@ViewBag.Ivo.Foto">
+            <p>@ViewBag.Ivo.Nombre @ViewBag.Ivo.Apellido</p>
+        </div>
+    </a>
+    <a href='@Url.Action("MostrarPerfil", new{IdUsuario = @ViewBag.Marcos.IdUsuario})'>
+        <div class= "CardCategoria">
+            <img class="border" src="@ViewBag.Marcos.Foto">
+            <p>@ViewBag.Marcos.Nombre @ViewBag.Marcos.Apellido</p>
+        </div>
+    </a>
+</div>
