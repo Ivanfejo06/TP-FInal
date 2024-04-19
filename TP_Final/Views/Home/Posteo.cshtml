@@ -25,27 +25,21 @@
             <button id="botonCrearUsuario" class="boton">Comentar</button>
         </form>
     }
-    <div class="Comentarios">
-        @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
-        {
-            <div class = "Comentario">
-                <div class= "informacionC"> 
-                    <h5>@p.IdUsuario</h5>
-                    @if(ViewBag.Usuario != null)
+    @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
+    {
+        <div class = "Comentario">
+            <div class= "informacionC"> 
+                <h4>@p.IdUsuario</h4>
+                @if(ViewBag.Usuario != null)
+                {
+                    if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
                     {
-                        if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
-                        {
-                            <button class="botonB"> <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> Eliminar Comentario </a> </button> 
-                        }
+                        <button class="botonB"> <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> Eliminar Comentario </a> </button> 
                     }
-                </div>
-                <div class= "">
-                <p>@p.Cuerpo</p>
-                </div>
-                <div>
-                    <p>@p.fecha.ToShortDateString() </p>
-                </div>
+                }
             </div>
-        }
-    </div>
+            <p>@p.Cuerpo</p>
+            <p>@p.fecha.ToShortDateString() </p>
+        </div>
+    }
 </div>

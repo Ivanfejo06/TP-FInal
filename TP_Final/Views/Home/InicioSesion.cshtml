@@ -2,8 +2,8 @@
     <div class="containerConfig"> 
         <form action='@Url.Action("VerificarLogin")' method="get" class="formulario">
             <h3>Iniciar Sesión</h3>
-            <input type="text" placeholder="Usuario" name="IdUsuario">
-            <input type="password" placeholder="Contraseña" name="Contraseña">
+            <input type="text" placeholder="Usuario" name="IdUsuario" required>
+            <input type="password" placeholder="Contraseña" name="Contraseña" required>
             <button type="submit">Iniciar Sesión</button>
             <p class="error">@ViewBag.Error</p>
             <a href='@Url.Action("Registrarse")' class="NoAccount">¿No tenes cuenta?</a>

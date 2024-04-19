@@ -26,10 +26,7 @@ public class HomeController : Controller
 
     public IActionResult InicioSesion()
     {
-        if (Logged != null)
-        {
-            return RedirectToAction("Index");
-        }
+        ViewBag.Error = "";
         return View("InicioSesion");
     }
 
@@ -79,6 +76,7 @@ public class HomeController : Controller
 
     public IActionResult Registrarse()
     {
+        ViewBag.Error = "";
         return View("Registro");
     }
 
@@ -121,8 +119,18 @@ public class HomeController : Controller
 
     public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
-        BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
-        return RedirectToAction ("InicioSesion","Auth");
+        if (true)
+        {
+            BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
+            Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
+            Logged = user;
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            ViewBag.Error = "Datos de registro incorrectos";
+            return View("Registro");
+        }
     }
 
     public IActionResult InsertComentario (string Comentario,string IdUsuario,int IdPosteo)
