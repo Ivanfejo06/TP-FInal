@@ -10,9 +10,9 @@
 .sub-navbar[b-aqvblvg7yk]
 {
   width: 100%;
-  height: 50px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .fotito[b-aqvblvg7yk]{
   width: 90px;
@@ -66,7 +66,7 @@
 .categoria[b-aqvblvg7yk]{
   color: #777777;
   text-shadow: 0 0 10px rgb(0 0 0 / 10%);
-  padding-top: 15px;
+  padding: 10px;
   transition: background-color 1s ease;
 }
 

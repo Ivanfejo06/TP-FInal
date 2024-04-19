@@ -22,25 +22,25 @@ body {
   flex-wrap: wrap;
 }
 .card
-  {
-    width: 30%;
-    overflow: hidden;
-    float: left;
-    margin: 20px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-    text-align: center;
-    cursor: pointer;
-    
-  }
-  .card h3
-  {
-    text-align: center;
-  }
-  .card img
-  {
-    width: 70%;
-    margin-left: 15%;
-  }
+{
+  width: 30%;
+  overflow: hidden;
+  float: left;
+  margin: 20px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  cursor: pointer;
+  
+}
+.card h3
+{
+  text-align: center;
+}
+.card img
+{
+  width: 70%;
+  margin-left: 15%;
+}
 .containerPerfil
 {
   width: 100%;
@@ -80,18 +80,18 @@ body {
 }
 .cardc{
   width: 33%;
+  padding: 10px;
 }
 .CardCategoria
 {
   overflow: hidden;
-  margin: 10px;
-  padding: 10px;
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
   background-color: white;
   border-radius: 15px;
+  height: 100%;
 }
 .CardCategoria:hover{
   background-color: #c4c4c4;
@@ -191,8 +191,6 @@ body {
 
 .Posteo .TopBar
 {
-  background-color:#d1efec;
-  position: relative;
   width: 20%;
   height: 100%;
 }
