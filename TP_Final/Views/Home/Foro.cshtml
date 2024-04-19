@@ -12,7 +12,7 @@
         }
     </div>
     <h3 class = "TituloCategoria">@ViewBag.Foro.Titulo</h3>
-    <p class="centrar">@ViewBag.Foro.Descripcion</p>
+    <h5 class="centrar">@ViewBag.Foro.Descripcion</h5>
     @if(ViewBag.Usuario != null)
     {
         <button class = "boton"><a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo})'>Crear Posteo</a></button>

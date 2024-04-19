@@ -13,7 +13,7 @@
     </div>
 
     <h3 class = "TituloCategoria">@ViewBag.Posteo.Titulo</h3>
-    <h6 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h6>
+    <h5 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h5>
     <p>@ViewBag.Posteo.Descripcion</p>
     <p>@ViewBag.Posteo.Cuerpo</p>
 
@@ -29,7 +29,7 @@
     {
         <div class = "Comentario">
             <div class= "informacionC"> 
-                <h4>@p.IdUsuario</h4>
+                <a href='@Url.Action("MostrarPerfil", new{IdUsuario = p.IdUsuario})'><b>@p.IdUsuario</b></a>
                 @if(ViewBag.Usuario != null)
                 {
                     if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
@@ -38,8 +38,10 @@
                     }
                 }
             </div>
-            <p>@p.Cuerpo</p>
-            <p>@p.fecha.ToShortDateString() </p>
+            <div class="informacionC">
+                <p class="cuerpo">@p.Cuerpo</p>
+                <p>@p.fecha.ToShortDateString()</p>
+            </div>
         </div>
     }
 </div>

@@ -1,13 +1,13 @@
-<div class= "containerPerfil">
+<div class= "recuadro">
     <div class="divPerfilInt">
-        <div class="divPerfilInt">
+        <div class="div">
             <img class = "imgPerfil" src ="@ViewBag.Perfil.Foto"> 
             <p>@ViewBag.Perfil.IdUsuario</p>
         </div>
-        <div class="desc">
-            <div class="descr">
-                <p class="pDescripcion">@ViewBag.InfoPerfil.Descripcion </p>
-            </div>
+        <div class="descr">
+            <p class="pDescripcion">@ViewBag.InfoPerfil.Descripcion </p>
+        </div>
+        <div class="logout">
             @if(ViewBag.Usuario != null)
             {
                 if(ViewBag.Usuario.IdUsuario == ViewBag.InfoPerfil.IdUsuario)
