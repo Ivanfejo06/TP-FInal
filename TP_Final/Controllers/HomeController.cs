@@ -119,7 +119,7 @@ public class HomeController : Controller
 
     public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
-        if (true)
+        if (IdUsuario.Length <= 50 && Contraseña.Length <= 50 && Correo.Length <= 50 && Nombre.Length <= 50 && Apellido.Length <= 50)
         {
             BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
             Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
