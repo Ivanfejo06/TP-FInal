@@ -28,12 +28,13 @@
   font-size: 16px; /* Tamaño de fuente */
   cursor: pointer; /* Cursor al pasar */
   border-radius: 20px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
 /* Cambiar color de fondo al pasar */
 .iniciar:hover {
   background-color: #d9dee4; /* Nuevo color de fondo */
+  transform: translateY(-3px); /* Elevación de 3px */
 }
 
 .registrarse {
@@ -45,12 +46,13 @@
   font-size: 16px; /* Tamaño de fuente */
   cursor: pointer; /* Cursor al pasar */
   border-radius: 20px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
 /* Cambiar color de fondo al pasar */
 .registrarse:hover {
   background-color: #0056b3; /* Nuevo color de fondo */
+  transform: translateY(-3px); /* Elevación de 3px */
 }
 
 .barra{
@@ -61,17 +63,37 @@
 
 .titulo{
   color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+  transition: color 0.3s ease;
 }
 
-.categoria{
+.titulo:hover{
+  color: rgb(179, 177, 177);
+}
+
+.titulo:hover .barra{
+  background-color: rgb(179, 177, 177);
+}
+
+.categoria {
   color: #777777;
-  text-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   padding: 10px;
-  transition: background-color 1s ease;
+  transition: color 0.3s ease; /* Añadimos una transición para el cambio de color */
 }
 
-.categoria:hover{
+.categoria:hover {
   color: #666666;
+  animation: sombra 3s ease; /* Iniciamos la animación al hacer hover */
+}
+
+@keyframes sombra {
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+  }
 }
 
 .idusuario{
@@ -94,10 +116,12 @@
   background-color: #ffffff;
   padding: 5px;
   border-radius: 15px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 40%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .perfil:hover{
-  background-color: #e0e0e0;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 40%);
+  transform: translateY(-3px);
 }
 .pfp{
   border-radius: 15px;

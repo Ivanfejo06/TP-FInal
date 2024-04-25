@@ -41,6 +41,7 @@ body {
   width: 70%;
   margin-left: 15%;
 }
+
 .imgPerfil
 {
   width: 100px;
@@ -48,38 +49,47 @@ body {
   border-radius: 60px;
   display: flex;
 }
+
 .pDescripcion
 {
   word-wrap: break-word;
   justify-content: center;
 }
+
 .TituloCategoria
 {
   text-align: center;
 }
+
 .ContainerCategoria
 {
   flex-wrap: wrap;
 }
+
 .cardc{
   width: 33%;
   padding: 10px;
 }
-.CardCategoria
-{
+
+.CardCategoria {
   overflow: hidden;
-  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Añadimos transform para la animación de elevación */
   background-color: white;
   border-radius: 15px;
   height: 100%;
+  display: flex; /* Utilizamos flexbox */
+  flex-direction: column; /* Los elementos hijos se alinearán en columna */
+  justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal con espacio entre ellos */
 }
-.CardCategoria:hover{
-  background-color: #c4c4c4;
-  text-decoration: none;
+
+.CardCategoria:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4); /* Aumentamos la sombra para simular elevación */
+  transform: translateY(-5px); /* Elevamos la tarjeta 5px hacia arriba */
 }
+
 .containerConfig
 {
   justify-content: center;
@@ -88,7 +98,7 @@ body {
   width: auto;
   height: auto;
   padding: 1%;
-  border-radius: 15px;
+  border-radius: 25px;
   background-color: #6bc1b1;
 }
 .containerConfig .imgPerfil
@@ -140,6 +150,8 @@ body {
 {
   width: 100%;
   background-color: #6bc1b1; /* Color de fondo del botón */
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   color: white; /* Color del texto */
   border: none; /* Sin borde */
   padding: 5px 10px; /* Espaciado interno */
@@ -147,24 +159,28 @@ body {
   cursor: pointer; /* Cursor al pasar */
   border-radius: 20px; /* Bordes redondeados */
   transition: background-color 0.3s ease; /* Transición suave */
+  margin-bottom: 10px;
 }
 .boton:hover {
-  background-color: #59a194; /* Nuevo color de fondo */
+  background-color: #61afa1;
 }
 .Posteo
 {
+  margin-top: 15px;
   justify-content: space-around;
   display: flex;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
   overflow: hidden;
   border-radius: 15px;
   background-color: #d1efec;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .Posteo .TopBar
 {
   height: auto;
   width: 70%;
+  margin-top: 10px;
 }
 .Posteo h4{
   width: auto;
@@ -173,6 +189,11 @@ body {
   border-radius: 10px;
   width: 75%;
   text-align: left;
+}
+.Posteo:hover{
+  background-color: #c9e6e3;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
 }
 .Comentario{
   margin-top:10px;
@@ -228,6 +249,9 @@ a{
   display: flex;
   justify-content: space-between;
 }
+.cabeza{
+  margin-bottom: 10px;
+}
 .informacionC{
   display: flex;
   justify-content: space-between;
@@ -241,7 +265,7 @@ a{
 .formulario {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: auto;
   text-align: center;
@@ -249,12 +273,13 @@ a{
 
 .formulario h3 {
   color: rgb(54, 54, 54);
+  margin-bottom: 20px;
 }
 
 .formulario input {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
@@ -306,6 +331,7 @@ a{
 }
 .LowBar{
   width: 20%;
+  margin-top: 10px;
 }
 .title{
   text-align: start;

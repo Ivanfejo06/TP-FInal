@@ -15,8 +15,10 @@
             }
         }
     </div>
-    <h3 class="TituloCategoria">@ViewBag.Foro.Titulo</h3>
-    <h5 class="centrar">@ViewBag.Foro.Descripcion</h5>
+    <div class="cabeza">
+        <h3 class="TituloCategoria">@ViewBag.Foro.Titulo</h3>
+        <h5 class="centrar">@ViewBag.Foro.Descripcion</h5>
+    </div>
     @if(ViewBag.Usuario != null)
     {
         <a href='@Url.Action("CrearPosteo", new{Id = @ViewBag.Foro.IdForo})'><button class="boton">Crear Posteo</button></a>

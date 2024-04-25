@@ -29,12 +29,13 @@
   font-size: 16px; /* Tamaño de fuente */
   cursor: pointer; /* Cursor al pasar */
   border-radius: 20px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
 /* Cambiar color de fondo al pasar */
 .iniciar:hover[b-aqvblvg7yk] {
   background-color: #d9dee4; /* Nuevo color de fondo */
+  transform: translateY(-3px); /* Elevación de 3px */
 }
 
 .registrarse[b-aqvblvg7yk] {
@@ -46,12 +47,13 @@
   font-size: 16px; /* Tamaño de fuente */
   cursor: pointer; /* Cursor al pasar */
   border-radius: 20px; /* Bordes redondeados */
-  transition: background-color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
 /* Cambiar color de fondo al pasar */
 .registrarse:hover[b-aqvblvg7yk] {
   background-color: #0056b3; /* Nuevo color de fondo */
+  transform: translateY(-3px); /* Elevación de 3px */
 }
 
 .barra[b-aqvblvg7yk]{
@@ -62,17 +64,37 @@
 
 .titulo[b-aqvblvg7yk]{
   color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+  transition: color 0.3s ease;
 }
 
-.categoria[b-aqvblvg7yk]{
+.titulo:hover[b-aqvblvg7yk]{
+  color: rgb(179, 177, 177);
+}
+
+.titulo:hover .barra[b-aqvblvg7yk]{
+  background-color: rgb(179, 177, 177);
+}
+
+.categoria[b-aqvblvg7yk] {
   color: #777777;
-  text-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   padding: 10px;
-  transition: background-color 1s ease;
+  transition: color 0.3s ease; /* Añadimos una transición para el cambio de color */
 }
 
-.categoria:hover[b-aqvblvg7yk]{
+.categoria:hover[b-aqvblvg7yk] {
   color: #666666;
+  animation: sombra-b-aqvblvg7yk 3s ease; /* Iniciamos la animación al hacer hover */
+}
+
+@keyframes sombra-b-aqvblvg7yk {
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+  }
 }
 
 .idusuario[b-aqvblvg7yk]{
@@ -95,10 +117,12 @@
   background-color: #ffffff;
   padding: 5px;
   border-radius: 15px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 40%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .perfil:hover[b-aqvblvg7yk]{
-  background-color: #e0e0e0;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 40%);
+  transform: translateY(-3px);
 }
 .pfp[b-aqvblvg7yk]{
   border-radius: 15px;
