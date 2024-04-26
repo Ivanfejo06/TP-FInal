@@ -2,7 +2,7 @@
     var idUsuario = ViewBag.Posteo.IdUsuario;
     var idPosteo = ViewBag.Posteo.IdPosteo;
     var idForo = ViewBag.Posteo.IdForo;
-    var idUser = ViewBag.Usuario.IdUsuario;
+    var idUser = ViewBag.Usuario != null ? ViewBag.Usuario.IdUsuario : null; // Verificar si ViewBag.Usuario es nulo antes de acceder a su propiedad IdUsuario
 }
 
 <div class="recuadro">
