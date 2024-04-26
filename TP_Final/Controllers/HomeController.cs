@@ -134,16 +134,22 @@ public class HomeController : Controller
 
     public IActionResult CargarUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto)
     {
-        if (IdUsuario.Length <= 50 && Contraseña.Length <= 50 && Correo.Length <= 50 && Nombre.Length <= 50 && Apellido.Length <= 50)
-        {
-            BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
-            Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
-            Logged = user;
-            return RedirectToAction("Home");
+        if(BD.UserUsuario(IdUsuario) == null){
+            if (IdUsuario.Length <= 50 && Contraseña.Length <= 50 && Correo.Length <= 50 && Nombre.Length <= 50 && Apellido.Length <= 50)
+            {
+                BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
+                Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
+                Logged = user;
+                return RedirectToAction("Home");
+            }
+            else
+            {
+                ViewBag.Error = "Datos de registro incorrectos";
+                return View("Registro");
+            }
         }
-        else
-        {
-            ViewBag.Error = "Datos de registro incorrectos";
+        else{
+            ViewBag.Error = "Ya existe ese usuario";
             return View("Registro");
         }
     }
@@ -216,7 +222,7 @@ public class HomeController : Controller
     public IActionResult Logout()
     {
         Logged = null;
-        return RedirectToAction("Hom");
+        return RedirectToAction("Home");
     }
 
 

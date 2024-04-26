@@ -68,11 +68,11 @@
 }
 
 .titulo:hover[b-aqvblvg7yk]{
-  color: rgb(179, 177, 177);
+  color: rgb(223, 223, 223);
 }
 
 .titulo:hover .barra[b-aqvblvg7yk]{
-  background-color: rgb(179, 177, 177);
+  background-color: rgb(207, 207, 207);
 }
 
 .categoria[b-aqvblvg7yk] {
@@ -83,7 +83,7 @@
 }
 
 .categoria:hover[b-aqvblvg7yk] {
-  color: #666666;
+  color: #000000;
   animation: sombra-b-aqvblvg7yk 3s ease; /* Iniciamos la animación al hacer hover */
 }
 
