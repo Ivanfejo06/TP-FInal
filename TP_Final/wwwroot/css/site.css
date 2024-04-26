@@ -61,6 +61,12 @@ body {
   text-align: center;
 }
 
+.tituloCategoria
+{
+  text-align: center;
+  width: 250px;
+}
+
 .ContainerCategoria
 {
   flex-wrap: wrap;
@@ -97,7 +103,7 @@ body {
   text-align: center;
   width: auto;
   height: auto;
-  padding: 1%;
+  padding: 5px;
   border-radius: 25px;
   background-color: #6bc1b1;
 }
@@ -271,7 +277,7 @@ a{
 .formulario {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 22px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: auto;
   text-align: center;
@@ -349,10 +355,6 @@ a{
   width: 30%;
   right: 10%;
 }
-
-.cardd{
-  
-}
 .CardHome {
   overflow: hidden;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -396,11 +398,22 @@ a{
   justify-content: center;
   box-shadow: 0 4px 4px rgba(0,0,0,0.2);
   text-align: center;
-  width: auto;
   height: auto;
   padding: 5px;
   border-radius: 15px;
   background-color: #ffffff;
+}
+
+.recc{
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 260px;
+  height: auto;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .iniciar {
