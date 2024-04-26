@@ -7,12 +7,19 @@
         <div class="descr">
             <p class="pDescripcion">@ViewBag.InfoPerfil.Descripcion </p>
         </div>
+
+         
+
+
+
+
         <div class="logout">
             @if(ViewBag.Usuario != null)
             {
                 if(ViewBag.Usuario.IdUsuario == ViewBag.InfoPerfil.IdUsuario)
                 {
-                    <button class ="botonB" onclick=confirmarEliminar()>Cerrar sesion </button>
+                    <button class = "botonB" onclick=confirmarEliminar()>Cerrar sesion </button>
+                    <a href='@Url.Action("UpdateDataUsuario")'><button class = "botonbl">Editar Usuario</button></a>
                 }
             }
         </div>
@@ -25,7 +32,7 @@
             title: '¿Estás seguro?',
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#6bc1b1',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Sí, cerrar sesión!',
             cancelButtonText: 'Cancelar'

@@ -9,14 +9,15 @@
                 <span id="PasswordAlert" class="alert"></span>
                 <input type="password" value="" placeholder="Repetir Contraseña" id="c2" onkeyup="ValidateRepeat()" required>
                 <span id="RepeatAlert" class="alert"></span>
-                <input type="email" value="" name="Correo" placeholder="Correo@correo.correo" id="mail" onkeyup="ValidateEmail()" required>
+                <input type="email" value="" name="Correo" placeholder="Correo@correo.correo" id="mail" onkeyup="ValidateEmail()">
                 <span id="MailAlert" class="alert"></span>
                 <input name="Nombre" type="text" placeholder= "Nombre" id="name" onkeyup="ValidateName()" required>
                 <span id="NameAlert" class="alert"></span>
                 <input name="Apellido" type="text" placeholder= "Apellido" id="a" onkeyup="ValidateApellido()" required>
                 <span id="ApellidoAlert" class="alert"></span>
-                <input name="Foto" type="image" placeholder= "Foto" value="NULL">
+                <input name="Foto" type="url" placeholder= "Foto (url)" >
                 <button id="botonCrearUsuario" >Crear Usuario</button>
+            
                 <p class="error">@ViewBag.Error</p>
             <div>
         </form>

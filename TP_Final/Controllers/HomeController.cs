@@ -124,9 +124,10 @@ public class HomeController : Controller
         return View("Configuracion");
     }
 
-    public IActionResult UpdateDataUsuario(Usuario Us)
+    public IActionResult UpdateDataUsuario()
     {
-        ViewBag.Usuario = Us;
+        ViewBag.Usuario = Logged;
+        ViewBag.Perfil = BD.MostrarPerfil(Logged.IdUsuario);
         return View("UpdatearDatos");
     }
 
@@ -178,7 +179,7 @@ public class HomeController : Controller
         public IActionResult UpdatearUsuario(string IdUsuario,string Contraseña,string Correo,string Nombre,string Apellido,string Foto,string Descripcion,string ImagenFondo)
         {
             BD.UpdatearUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto,Descripcion,ImagenFondo);
-            return RedirectToAction ("MostrarConfiguracion");
+            return RedirectToAction ("MostrarPerfil", new{IdUsuario = IdUsuario});
         }
 
         public IActionResult UpdatearComentario(string IdUsuario,string Cuerpo,int IdComentario)

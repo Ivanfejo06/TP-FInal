@@ -1,0 +1,26 @@
+<div class="centrar">
+    <div class="containerConfig">   
+        <form action='@Url.Action("UpdatearUsuario")' method="get" class="formulario">
+            <div class="text-center">
+                <h3>Cambiar datos Usuario</h3>
+                <input name="IdUsuario" type="hidden" placeholder = "Nombre de Usuario" value="@ViewBag.Usuario.IdUsuario">
+                <input type="password" name="Contraseña" placeholder="Contraseña" id="c1" onkeyup="ValidatePassword()" required value="@ViewBag.Usuario.Contraseña">
+                <span id="PasswordAlert" class="alert"></span>
+                <input type="password" name="RepetirContraseña" placeholder="Repetir Contraseña" id="c2" onkeyup="ValidateRepeat()" required value="@ViewBag.Usuario.Contraseña">
+                <span id="RepeatAlert" class="alert"></span>
+                <input type="email" name="Correo" placeholder="Correo@correo.correo" id="mail" onkeyup="ValidateEmail()" required value="@ViewBag.Usuario.Correo">
+                <span id="MailAlert" class="alert"></span>
+                <input name="Nombre" type="text" placeholder="Nombre" id="name" onkeyup="ValidateName()" required value="@ViewBag.Usuario.Nombre">
+                <span id="NameAlert" class="alert"></span>
+                <input name="Apellido" type="text" placeholder="Apellido" id="a" onkeyup="ValidateApellido()" required value="@ViewBag.Usuario.Apellido">
+                <span id="ApellidoAlert" class="alert"></span>
+                <input name="Foto" type="url" placeholder="Foto (url)" value="@ViewBag.Usuario.Foto">
+                <h3>Cambiar datos Perfil</h3>
+                <textarea name="Descripcion" placeholder="Descripción del perfil" id="user" rows="3" style="width: 100%;" >@ViewBag.Perfil.Descripcion</textarea>
+                <span id="UserAlert" class="alert"></span>
+                <button id="botonCrearUsuario">Hacer Cambios</button>
+                <p class="error">@ViewBag.Error</p>
+            </div>
+        </form>
+    </div>
+</div>
