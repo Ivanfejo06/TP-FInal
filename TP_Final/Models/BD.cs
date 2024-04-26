@@ -95,13 +95,24 @@ public class BD
         return C;
     }
 
-        static public List<Categorias> TraerCategorias(){
+    static public List<Categorias> TraerCategorias()
+    {
         string sql = "SELECT * FROM Categorias";
         List<Categorias> listaCategorias;
         using(SqlConnection db = new SqlConnection(_connectionString)){
             listaCategorias = db.Query<Categorias>(sql).ToList();
         }
         return listaCategorias;
+    }
+
+    static public ComentarioPosteo TraerComentario(int IdComentario)
+    {
+        string sql = "SELECT * FROM ComentarioPosteo WHERE IdComentario = @idComentario";
+        ComentarioPosteo Comentario;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            Comentario = db.QueryFirstOrDefault<ComentarioPosteo>(sql, new{idComentario = IdComentario});
+        }
+        return Comentario;
     }
     
     static public List<Posteos> MostrarPosteos(int IdForo, int cantidad){

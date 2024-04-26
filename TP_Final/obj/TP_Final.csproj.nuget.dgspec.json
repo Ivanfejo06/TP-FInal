@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\devandroid\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {}
+    "C:\\Users\\Ivan\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\devandroid\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {
+    "C:\\Users\\Ivan\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\devandroid\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
         "projectName": "TP_Final",
-        "projectPath": "C:\\Users\\devandroid\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
-        "packagesPath": "C:\\Users\\devandroid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\devandroid\\Desktop\\TP-FInal\\TP_Final\\obj\\",
+        "projectPath": "C:\\Users\\Ivan\\Desktop\\TP-FInal\\TP_Final\\TP_Final.csproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\Desktop\\TP-FInal\\TP_Final\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\devandroid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -72,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

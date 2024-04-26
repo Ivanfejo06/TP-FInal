@@ -19,6 +19,14 @@ public class HomeController : Controller
     //Mostrar informacion
     public IActionResult Index()
     {        
+        ViewBag.Posteo = BD.TraerPosteo(2);
+        ViewBag.Comentario = BD.TraerComentario(8);
+        ViewBag.Usuario = Logged;
+        return View();  
+    }
+
+    public IActionResult Home()
+    {        
         ViewBag.Usuario = Logged;
         ViewBag.ListarForos = BD.MostrarForosPrincipal(9);
         return View();  
@@ -36,7 +44,7 @@ public class HomeController : Controller
         {
             Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
             Logged = user;
-            return RedirectToAction("Index");
+            return RedirectToAction("Home");
         }
         else
         {
@@ -131,7 +139,7 @@ public class HomeController : Controller
             BD.InsertarUsuario(IdUsuario,Contraseña,Correo,Nombre,Apellido,Foto);
             Usuario user = BD.IniciarSesion(IdUsuario,Contraseña);
             Logged = user;
-            return RedirectToAction("Index");
+            return RedirectToAction("Home");
         }
         else
         {
@@ -181,7 +189,7 @@ public class HomeController : Controller
             return RedirectToAction ("Categoria",new{idCategoria = IdCategoria});
         }
 
-        public IActionResult EliminarComentario (string IdUsuario,int IdComentario,int IdPosteo)
+        public IActionResult EliminarComentario (string IdUsuario, int IdComentario, int IdPosteo)
         {
             BD.EliminarComentario(IdUsuario,IdComentario);
             return RedirectToAction ("Posteo",new{idPosteo = IdPosteo});
@@ -190,7 +198,7 @@ public class HomeController : Controller
         public IActionResult EliminarUsuario (string IdUsuario)
         {
             BD.EliminarUsuario(IdUsuario);
-            return RedirectToAction ("Index");
+            return RedirectToAction ("Home");
         }
 
         public IActionResult EliminarPosteo (string IdUsuario, int IdPosteo, int IdForo)
@@ -208,7 +216,7 @@ public class HomeController : Controller
     public IActionResult Logout()
     {
         Logged = null;
-        return RedirectToAction("Index");
+        return RedirectToAction("Hom");
     }
 
 

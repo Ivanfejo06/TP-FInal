@@ -233,14 +233,20 @@ a{
   justify-content: space-between;
 }
 .div{
-  width: 15%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .descr{
   text-align: center;
-  width: 75%;
+  width: 80%;
 }
 .logout{
   width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .with{
   width: 100%;
@@ -335,4 +341,106 @@ a{
 }
 .title{
   text-align: start;
+}
+
+
+.infoPost{
+  position: absolute;
+  width: 30%;
+  right: 10%;
+}
+
+.cardd{
+  
+}
+.CardHome {
+  overflow: hidden;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Añadimos transform para la animación de elevación */
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  height: 100%;
+  display: flex; /* Utilizamos flexbox */
+  flex-direction: column; /* Los elementos hijos se alinearán en columna */
+  justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal con espacio entre ellos */
+}
+.CardHome:hover{
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4); /* Aumentamos la sombra para simular elevación */
+  transform: translateY(-5px); /* Elevamos la tarjeta 5px hacia arriba */
+}
+.Comment {
+  position: relative;
+  width: 40%;
+  right: 90px;
+  bottom: 50px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Aplicamos la misma transición que en .CardHome */
+}
+.remark{
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #6bc1b1;
+  margin-bottom: 20px;
+}
+.half{
+  width: 57%;
+}
+.rec{
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.iniciar {
+  background-color: #f1f5fa; /* Color de fondo del botón */
+  color: rgb(0, 0, 0); /* Color del texto */
+  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 40px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+.iniciar h5{
+  margin: 0px;
+}
+
+/* Cambiar color de fondo al pasar */
+.iniciar:hover {
+  background-color: #d9dee4; /* Nuevo color de fondo */
+  transform: translateY(-3px); /* Elevación de 3px */
+}
+
+.registrarse {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 40px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+.registrarse h5{
+  margin: 0px;
+}
+
+/* Cambiar color de fondo al pasar */
+.registrarse:hover {
+  background-color: #0056b3; /* Nuevo color de fondo */
+  transform: translateY(-3px); /* Elevación de 3px */
 }

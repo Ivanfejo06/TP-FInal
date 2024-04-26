@@ -1,3 +1,10 @@
+@{
+    var idUsuario = ViewBag.Posteo.IdUsuario;
+    var idPosteo = ViewBag.Posteo.IdPosteo;
+    var idForo = ViewBag.Posteo.IdForo;
+    var idUser = ViewBag.Usuario.IdUsuario;
+}
+
 <div class="recuadro">
     <div class="informacion">
         <h6>Escrito por <a href='@Url.Action("MostrarPerfil", new{IdUsuario = ViewBag.Posteo.IdUsuario})'><b>@ViewBag.Posteo.IdUsuario</b></a></h6>
@@ -5,36 +12,36 @@
         {
             if(ViewBag.Usuario.IdUsuario == ViewBag.Posteo.IdUsuario)
             {
-                <button class="botonB" >
-                    <a href='@Url.Action("EliminarPosteo", new { IdUsuario = ViewBag.Posteo.IdUsuario, IdPosteo = ViewBag.Posteo.IdPosteo, IdForo = ViewBag.Posteo.IdForo })'> <p>Eliminar Posteo</p> </a> 
-                </button>
+                <button class="botonB" onclick="confirmarEliminar()">Eliminar Posteo</button>
             }
         }
     </div>
 
-    <h3 class = "TituloCategoria">@ViewBag.Posteo.Titulo</h3>
+    <h3 class="TituloCategoria">@ViewBag.Posteo.Titulo</h3>
     <h5 class="TituloCategoria">@ViewBag.Posteo.Subtitulo</h5>
     <p>@ViewBag.Posteo.Descripcion</p>
     <p>@ViewBag.Posteo.Cuerpo</p>
 
     @if (ViewBag.Usuario != null){
-        <form Action= '@Url.Action("InsertComentario")' method= "get">
+        <form Action='@Url.Action("InsertComentario")' method="get">
             <textarea name="Comentario" type="text" placeholder="Comentar..." rows="3" style="width: 100%;" required></textarea>
-            <input type="hidden" value=@ViewBag.Usuario.IdUsuario name="IdUsuario">
-            <input type="hidden" value=@ViewBag.Posteo.IdPosteo name="IdPosteo">
+            <input type="hidden" value="@ViewBag.Usuario.IdUsuario" name="IdUsuario">
+            <input type="hidden" value="@ViewBag.Posteo.IdPosteo" name="IdPosteo">
             <button id="botonCrearUsuario" class="boton">Comentar</button>
         </form>
     }
     @foreach(ComentarioPosteo p in ViewBag.ListComentarios)
     {
-        <div class = "Comentario">
-            <div class= "informacionC"> 
+        var idComentario = p.IdComentario; // Declarar idComentario aquí
+        
+        <div class="Comentario">
+            <div class="informacionC"> 
                 <a href='@Url.Action("MostrarPerfil", new{IdUsuario = p.IdUsuario})'><b>@p.IdUsuario</b></a>
                 @if(ViewBag.Usuario != null)
                 {
-                    if( ViewBag.Usuario.IdUsuario == p.IdUsuario)
+                    if(ViewBag.Usuario.IdUsuario == p.IdUsuario)
                     {
-                        <button class="botonB"> <a href='@Url.Action("EliminarComentario", new{IdUsuario= @p.IdUsuario,IdComentario = @p.IdComentario,IdPosteo = @p.IdPosteo})'> Eliminar Comentario </a> </button> 
+                        <button class="botonB" onclick="confirmarEliminarC('@idComentario')">Eliminar Comentario</button>
                     }
                 }
             </div>
@@ -45,3 +52,45 @@
         </div>
     }
 </div>
+
+<script>
+    var idUsuario = '@idUsuario';
+    var idPosteo = '@idPosteo';
+    var idForo = '@idForo';
+    var idUser = '@idUser'
+    
+    function confirmarEliminar() {
+        Swal.fire({
+            title: '¿Estás seguro?',
+            text: "Esta acción no se puede deshacer.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, eliminarlo!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '@Url.Action("EliminarPosteo")?IdUsuario=' + idUsuario + '&IdPosteo=' + idPosteo + '&IdForo=' + idForo;
+            }
+        });
+    }
+    
+    function confirmarEliminarC(idComentario) {
+        Swal.fire({
+            title: '¿Estás seguro?',
+            text: "Esta acción no se puede deshacer.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, eliminarlo!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                var url = '@Url.Action("EliminarComentario")?IdUsuario=' + idUser + '&IdComentario=' + idComentario + '&IdPosteo=' + idPosteo;
+                window.location.href = url;
+            }
+        });
+    }
+</script>

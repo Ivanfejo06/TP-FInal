@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="flexer">
+    @foreach(Foro c in ViewBag.ListarForos)
+    {
+        <a class="cardc" href= '@Url.Action("Foro", new {idForo = c.IdForo})'>
+            <div class= "CardCategoria">
+                <div>
+                    <h3>@c.Titulo </h3>
+                    <p>@c.Descripcion </p>
+                </div> 
+                <div><h7>Escrito por <b>@c.IdUsuario</b></h7></div>
+            </div>
+        </a>
+    }
+</div>
